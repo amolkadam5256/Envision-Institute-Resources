@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Largest Number</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <br>
+    <hr><br>
+    <hr>
+    <div class="container py-5">
+        <div class="card mx-auto shadow-lg p-4 bg-light" style="max-width: 500px;">
+            <h1 class="mb-4 text-primary text-center">check Condition both are true Print true or one false than false
+            </h1>
+            <h2 class="text-center py-3">a < 50 && a < b</h2>
+                    <button class="btn btn-primary w-100" onclick="andOr()">Check Largest</button>
+                    <p id="result" class="mt-3 text-success text-center fw-bold"></p>
+        </div>
+    </div>
+
+    <br>
+    <hr><br>
+    <hr>
+    <div class="container py-5">
+        <div class="card mx-auto shadow-lg p-4 bg-light" style="max-width: 500px;">
+            <h1 class="mb-4 text-primary text-center">check one of the conditions true Print true both false than false
+            </h1>
+            <h2 class="text-center py-3">a < 50 || a < b</h2>
+
+                    <button class="btn btn-primary w-100" onclick="orOperater()">Check Largest</button>
+                    <p id="resultor" class="mt-3 text-success text-center fw-bold"></p>
+        </div>
+    </div>
+
+    <br>
+    <hr><br>
+    <hr>
+    <div class="container py-5">
+        <div class="card mx-auto shadow-lg p-4 bg-light" style="max-width: 500px;">
+            <h1 class="mb-4 text-primary text-center">Check Number is Even or Odd</h1>
+
+            <div class="mb-3">
+                <label for="num3" class="form-label">Enter Number to Check Even/Odd:</label>
+                <input type="number" id="num3" class="form-control" placeholder="Enter number">
+            </div>
+
+            <button class="btn btn-primary w-100" onclick="checkEvenOdd()">Check Number</button>
+            <p id="EvenOdd" class="mt-3 text-success text-center fw-bold"></p>
+        </div>
+    </div>
+
+    <br>
+    <hr><br>
+    <hr>
+    <div class="container py-5">
+        <div class="card mx-auto shadow-lg p-4 bg-light" style="max-width: 500px;">
+            <h1 class="mb-4 text-primary text-center">Calculating the Gross Salary of an Employee by Adding a Bonus
+                Based on Their Basic Salary</h1>
+
+            <div class="mb-3">
+                <label for="sal" class="form-label">Enter Employee Salary: </label>
+                <input type="number" id="sal" class="form-control" placeholder="Enter basic salary">
+            </div>
+
+            <div class="mb-3">
+                <label for="bonusPercentage" class="form-label">Enter Bonus Percentage: </label>
+                <input type="number" id="bonusPercentage" class="form-control" placeholder="Enter bonus percentage">
+            </div>
+
+            <button class="btn btn-primary w-100" onclick="grossSalary()">Calculate Salary</button>
+            <p id="bonusAmount" class="mt-3 text-success text-center fw-bold"></p>
+            <p id="grossSalaryAmount" class="mt-3 text-success text-center fw-bold"></p>
+        </div>
+    </div>
+
+
+    <br><br><br><br>
+    <hr>
+    <hr>
+    <hr>
+    <br><br><br> <br>
+    <div class="container py-5">
+        <div class="card mx-auto shadow-lg p-4 bg-light" style="max-width: 500px;">
+            <h1 class="mb-4 text-primary text-center">Menu Driven Program :</h1>
+
+            <div class="mb-3">
+                <label for="choice" class="form-label">Enter choice (1-4):</label>
+                <input type="number" id="choice" class="form-control" placeholder="Enter number (1-4)">
+            </div>
+
+            <button class="btn btn-primary w-100" onclick="menuDrivenProgram()">Calculate Me</button>
+
+            <p id="AreaOfCircle" class="mt-3 text-success text-center fw-bold">Area of Circle ?</p>
+            <p id="AreaOfTriangle" class="mt-3 text-success text-center fw-bold">Area of Triangle ?</p>
+            <p id="CircumferenceOfCircle" class="mt-3 text-success text-center fw-bold">Circumference of Circle ?</p>
+            <p id="PerimeterOfTriangle" class="mt-3 text-success text-center fw-bold">Perimeter of Triangle ?</p>
+        </div>
+    </div>
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+    <!-- Bootstrap Bundle JS (includes Popper.js) -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
