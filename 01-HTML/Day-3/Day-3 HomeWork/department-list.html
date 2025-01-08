@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department List</title>
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .button {
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .management {
+            align-items: center;
+            font-size: 20px;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Department List</h1>
+    <h2><a href="/HomePage.html">Homepage</a></h2>
+    <table>
+        <thead>
+            <th colspan="2" class="management">Search</th>
+            <th colspan="5">
+                <select class="management" name="management">
+                    <option value="all">All</option>
+                    <option value="kitchen">Kitchen</option>
+                    <option value="sales">Sales</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+            </th>
+            <tr>
+                <th>Department ID</th>
+                <th>Department Name</th>
+                <th>Address</th>
+                <th>Description</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kitchen</td>
+                <td>Mumbai</td>
+                <td>Manage all this to related Kitchen</td>
+                <td>
+                    <button class="button" type="button">Update</button>
+                </td>
+                <td>
+                    <button class="button" type="button">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sales</td>
+                <td>Pune</td>
+                <td>Manage all invoices</td>
+                <td>
+                    <button class="button" type="button">Update</button>
+                </td>
+                <td>
+                    <button class="button" type="button">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Marketing</td>
+                <td>Kokan</td>
+                <td>Manage all marketing</td>
+                <td>
+                    <button class="button" type="button">Update</button>
+                </td>
+                <td>
+                    <button class="button" type="button">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>HR</td>
+                <td>Lonavla</td>
+                <td>Manage all related Marketing</td>
+                <td>
+                    <button class="button" type="button">Update</button>
+                </td>
+                <td>
+                    <button class="button" type="button">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

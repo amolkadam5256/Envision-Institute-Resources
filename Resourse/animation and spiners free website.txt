@@ -1,0 +1,50 @@
+LottieFiles - lottiefiles.com
+Animate.css - animate.style
+Hover.css - ianlunn.github.io/Hover
+AOS - michalsnik.github.io/aos
+Anime.js - animejs.com
+GSAP - greensock.com/gsap
+ScrollReveal - scrollrevealjs.com
+Velocity.js - velocityjs.org
+Tilt.js - gijsroge.github.io/tilt.js
+Particles.js - vincentgarreau.com/particles.js
+SVG Animation - svganimation.com
+CodePen - codepen.io
+FreeFrontend - freefrontend.com
+CSS Tricks - css-tricks.com
+Animista - animista.net
+Cubic Bezier - cubic-bezier.com
+Keyframes.app - keyframes.app
+Piskel - piskelapp.com
+Blender - blender.org
+OpenToonz - opentoonz.github.io
+Synfig Studio - synfig.org
+Animaker - animaker.com
+Renderforest - renderforest.com
+Vyond - vyond.com
+Kapwing - kapwing.com
+Visme - visme.co
+Canva - canva.com
+Pixilart - pixilart.com
+TupiTube - tupitube.com
+Flickity - flickity.metafizzy.co
+Swiper - swiperjs.com
+Moovly - moovly.com
+Doodly - doodly.com
+Toonly - toonly.com
+Wideo - wideo.co
+Biteable - biteable.com
+FlexClip - flexclip.com
+Animatron - animatron.com
+Veed.io - veed.io
+Snappa - snappa.com
+Easil - about.easil.com
+Figma - figma.com
+Designify - designify.com
+Krita - krita.org
+Pencil2D - pencil2d.org
+Animatic - animaticapp.com
+Rellax.js - [dixonandmoe.com/rellax](https://dixonandmo
+
+
+

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Element color categories */
+.alkali {
+    background-color: #ffcccb; /* Light red */
+}
+
+.alkaline-earth {
+    background-color: #ffebcd; /* Blanched almond */
+}
+
+.transition-metal {
+    background-color: #add8e6; /* Light blue */
+}
+
+.post-transition-metal {
+    background-color: #e6e6fa; /* Lavender */
+}
+
+.metalloid {
+    background-color: #fffacd; /* Lemon chiffon */
+}
+
+.nonmetal {
+    background-color: #98fb98; /* Pale green */
+}
+
+.halogen {
+    background-color: #ffb6c1; /* Light pink */
+}
+
+.noble-gas {
+    background-color: #d3d3d3; /* Light gray */
+}
+
+.lanthanide {
+    background-color: #f0e68c; /* Khaki */
+}
+
+.actinide {
+    background-color: #ffdead; /* Navajo white */
+}

@@ -1,0 +1,26 @@
+
+ul {
+    list-style-type: square;
+}
+
+/* Descendant Combinator */
+div p {
+    color: darkblue;
+}
+
+/* Child Combinator */
+ul>li {
+    color: red;
+}
+
+#footer {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.External{
+    background-color: yellow;
+    padding: 5px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table format code</title>
+  <link rel="stylesheet" href="./table.css" />
+</head>
+
+<body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: transparent;
+
+    }
+
+
+    table {
+      margin-top: 50px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 80%;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    thead { 
+      background: yellow;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <h1>Table format use calspan and rowspan </h1>
+
+  <table>
+    <caption style="font-size: 30px;">Table format use calspan and rowspan (Caption) </caption>
+    <thead>
+      <tr>
+        <td>1</th>
+        <td>2</th>
+        <td>3</th>
+        <td>4</th>
+        <td>5</th>
+        <td colspan="2">6</td>
+        <td>7</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td colspan="5">Recipt Type</td>
+        <td colspan="3">Recipt Type</td>
+      </tr>
+
+      <tr>
+        <td colspan="4">Pay By</td>
+        <td colspan="4">Paid To</td>
+      </tr>
+
+      <tr>
+        <td colspan="5">Description</td>
+        <td colspan="2">Amount</td>
+        <td>no</td>
+      </tr>
+
+      <tr>
+        <td rowspan="5" colspan="5">h</td>
+        <td colspan="2">1</td>
+        <td>11</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">2</td>
+        <td>22</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">3</td>
+        <td>33</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">4</td>
+        <td>44</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">5</td>
+        <td>55</td>
+      </tr>
+
+
+      <tr>
+        <td colspan="4">5</td>
+        <td colspan="4">55</td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+
+</html>

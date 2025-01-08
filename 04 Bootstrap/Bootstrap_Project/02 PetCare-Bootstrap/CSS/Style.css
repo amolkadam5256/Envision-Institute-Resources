@@ -1,0 +1,252 @@
+/* Reset browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root variables */
+:root {
+    --primary-color: #FF4F81;
+    --secondary-color: #2ecc71;
+    --font-family: 'Roboto', sans-serif;
+    --spacing: 8px 16px;
+    --font-size-comman: 16px;
+}
+
+/* Custom fonts */
+@font-face {
+    font-family: 'Child';
+    src: url("../Fonts/Child Hood.otf");
+}
+
+@font-face {
+    font-family: 'Rockybilly_font';
+    src: url("../Fonts/Rockybilly.ttf");
+}
+
+@font-face {
+    font-family: Bruskest;
+    src: url(../images/Bruskest.otf);
+}
+
+/* Common styles */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+
+}
+
+.hero-section {
+    background-image: url('../images/h1_hero1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, top left;
+    background-attachment: scroll;
+    background-clip: border-box;
+}
+
+
+.header-content {
+    background-color: #0094DF;
+}
+
+nav .btn {
+    background-color: #FF3E7E;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+
+/*  body oof main section */
+
+
+.main-section .hero-title {
+    font-family: Bruskest;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.hero-card {
+    background-color: white;
+}
+
+
+
+
+
+
+@media only screen and (min-width:0px) and (max-width: 576px) {
+    .main-section .hero-title {
+        font-family: Bruskest;
+        font-size: 2rem;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero-card {
+        background-color: transparent;
+    }
+
+}
+
+
+
+
+/* card or owl carasol  */
+
+.item-inner-card {
+    z-index: 9999;
+    position: absolute;
+    bottom: -20px;
+    background-color: white;
+    margin: 0px 30px;
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+.live-section-play {
+    z-index: 9999;
+    position: absolute;
+    bottom: 10%;
+    margin: 0px 20px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.live-section h2 {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.live-section .btn {
+    background-color: #EB3773;
+
+}
+
+.emergency-bg {
+    background-image: url(../images/section_bg02.jpg);
+    background-size: cover;
+    /* Ensures the image covers the entire container */
+    background-position: left;
+    /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+
+.testimonial-section {
+    background-image: url(../images/dog-shape.png);
+    background-size: cover;
+    /* Ensures the image covers the entire container */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+
+
+.custom-carousel {
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+}
+
+.custom-carousel .custom-item {
+    padding: 20px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    /* background-color: #fff; */
+    border-radius: 10px;
+    background: transparent;
+}
+
+.custom-carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.helping-hand {
+    background-image: url(../images/section_bg03.jpg);
+    background-size: cover;
+    /* Ensures the image covers the entire container */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background-color: #f4f9ff;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.footer .footer-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer a:hover {
+    color: #ff477e;
+}
+
+.footer .social-icons a {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #333;
+}
+
+.footer .social-icons a:hover {
+    color: #ff477e;
+}
+
+.newsletter input[type="email"] {
+    border-radius: 25px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    width: 80%;
+}
+
+.newsletter button {
+    border-radius: 25px;
+    background-color: #ff477e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+}
+
+.newsletter button:hover {
+    background-color: #ff6589;
+}

@@ -1,0 +1,666 @@
+/* Reset browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+
+}
+
+.hero-contant {
+    padding: 50px 0px 50px 50px;
+}
+
+.hero-contant h1 {
+    font-size: 60px;
+
+}
+
+
+.featured-content {
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featured-card {
+    justify-content: center;
+    width: 100%;
+}
+
+/* about section */
+.about-section {
+    padding: 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(150, 150, 150, 0.1);
+}
+
+.about-icon {
+    width: 60%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    color: #4255A4;
+
+}
+
+.about-icon img {
+    width: 80px;
+    /* Set circle size */
+    height: 80px;
+    border-radius: 50%;
+    padding: 20px;
+    overflow: hidden;
+    /* Ensures the image is contained within the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(196, 112, 255);
+
+}
+
+.about-icon li::marker {
+    content: "✅ ";
+}
+
+.about-icon li {
+    padding-left: 10px;
+}
+
+.about-vidoi a i {
+    font-size: 60px;
+    border-radius: 50%;
+    color: rgb(255, 159, 103);
+
+}
+
+.about-vidoi a i:hover {
+    color: rgb(255, 159, 103);
+    text-shadow: 10px 10px 50px rgb(255, 159, 103);
+}
+
+
+/* /Explore top subjects */
+.Explore-content {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 50px 0px;
+}
+
+.Explore-Card {
+    position: relative;
+    width: 23%;
+    padding: 20px 0px;
+}
+
+
+.Explore-Card img {
+    width: 100%;
+    position: relative;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.Explore-Card h2 {
+    position: absolute;
+    justify-content: center;
+    padding-left: 50px;
+    top: 50%;
+}
+
+.Learner-section {
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+
+.Learner-section li::marker {
+    content: "✅ ";
+}
+
+.Learner-section li {
+    padding-left: 10px;
+}
+
+.owl-carousel {
+    padding: 50px 20px;
+    align-items: center;
+    margin: auto;
+}
+
+.owl-carousel .item {
+    justify-content: center;
+    /* background-color: rgba(189, 186, 186, 0.2); */
+}
+
+.item .item-img {
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    border-radius: 50%;
+}
+
+
+.item-img img {
+    width: 100%;
+}
+
+
+
+.nextstep-section {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.nextstep .nextstep-img {
+    width: 45%;
+    margin: auto;
+
+}
+
+.nextstep .nextstep-content {
+    justify-content: end;
+    width: 45%;
+    margin: auto;
+
+}
+
+
+.nextstep-img img {
+    width: 100%;
+}
+
+
+.nextstep .nextstep-content h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+
+
+/* footer */
+
+
+/* footer :end */
+
+
+/* media quary */
+
+
+@media only screen and (min-width:0px) and (max-width: 576px) {
+
+
+    .hero-contant {
+        padding: 50px 0px 50px 50px;
+    }
+
+
+    .hero-contant h1 {
+        font-size: 30px;
+
+    }
+
+    .featured-content {
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+    .featured-card {
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    /* about section */
+
+
+    .about-section {
+        padding: 50px 0px;
+        width: 100%;
+        display: block;
+        justify-content: space-around;
+        background-color: rgba(150, 150, 150, 0.1);
+    }
+
+    .about-icon {
+        width: 90%;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 30px;
+        color: #4255A4;
+
+    }
+
+    .about-icon img {
+        width: 80px;
+        /* Set circle size */
+        height: 80px;
+        border-radius: 50%;
+        padding: 20px;
+        overflow: hidden;
+        /* Ensures the image is contained within the circle */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(196, 112, 255);
+
+    }
+
+
+    .about-icon li::marker {
+        content: "✅ ";
+    }
+
+    .about-icon li {
+        padding-left: 10px;
+    }
+
+    .about-vidoi {
+        width: 90%;
+
+    }
+
+    .about-vidoi a i {
+        font-size: 60px;
+        border-radius: 50%;
+        color: rgb(255, 159, 103);
+
+    }
+
+    .about-vidoi a i:hover {
+        color: rgb(255, 159, 103);
+        text-shadow: 10px 10px 50px rgb(255, 159, 103);
+    }
+
+
+
+    /* /Explore top subjects */
+
+
+    .Explore-content {
+        display: flex;
+        width: 95%;
+        margin: auto;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 50px 0px;
+    }
+
+
+
+
+    .Explore-Card {
+        position: relative;
+        width: 80%;
+        padding: 20px 0px;
+    }
+
+
+    .Explore-Card img {
+        width: 100%;
+        position: relative;
+        opacity: 0.8;
+        border-radius: 20px;
+    }
+
+    .Explore-Card h2 {
+        position: absolute;
+        justify-content: center;
+        padding-left: 50px;
+        top: 50%;
+    }
+
+
+
+    .Learner-section {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .Learner-content {
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    .Learner-img {
+        width: 100%;
+
+    }
+
+    .Learner-img img {
+        width: 90%;
+    }
+
+    .Learner-section li::marker {
+        content: "✅ ";
+    }
+
+    .Learner-section li {
+        padding-left: 10px;
+    }
+
+    .owl-carousel {
+        padding: 50px 20px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .owl-carousel .item {
+        justify-content: center;
+        /* background-color: rgba(189, 186, 186, 0.2); */
+    }
+
+    .item .item-img {
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+        border-radius: 50%;
+    }
+
+
+    .item-img img {
+        width: 100%;
+    }
+
+
+
+    .nextstep-section {
+        position: relative;
+        display: block;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+
+    }
+
+    .nextstep .nextstep-img {
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .nextstep .nextstep-content {
+        justify-content: end;
+        width: 100%;
+        margin: auto;
+
+    }
+
+
+    .nextstep-img img {
+        width: 100%;
+    }
+
+
+    .nextstep .nextstep-content h2 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+
+
+
+    /* footer */
+
+
+    /* footer :end */
+
+
+}
+
+
+
+
+@media only screen and (min-width:576px) and (max-width: 992px) {
+
+
+
+    .hero-contant {
+        padding: 50px 0px 50px 50px;
+        background-color: red;
+    }
+
+
+
+
+    .hero-contant h1 {
+        font-size: 30px;
+
+    }
+
+    .featured-content {
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+    .featured-card {
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    /* about section */
+
+
+    .about-section {
+        padding: 50px 0px;
+        width: 100%;
+        display: block;
+        justify-content: space-around;
+        background-color: rgba(150, 150, 150, 0.1);
+    }
+
+    .about-icon {
+        width: 90%;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 30px;
+        color: #4255A4;
+
+    }
+
+    .about-icon img {
+        width: 80px;
+        /* Set circle size */
+        height: 80px;
+        border-radius: 50%;
+        padding: 20px;
+        overflow: hidden;
+        /* Ensures the image is contained within the circle */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(196, 112, 255);
+
+    }
+
+
+    .about-icon li::marker {
+        content: "✅ ";
+    }
+
+    .about-icon li {
+        padding-left: 10px;
+    }
+
+    .about-vidoi {
+        width: 90%;
+
+    }
+
+    .about-vidoi a i {
+        font-size: 60px;
+        border-radius: 50%;
+        color: rgb(255, 159, 103);
+
+    }
+
+    .about-vidoi a i:hover {
+        color: rgb(255, 159, 103);
+        text-shadow: 10px 10px 50px rgb(255, 159, 103);
+    }
+
+
+
+    /* /Explore top subjects */
+
+
+    .Explore-content {
+        display: flex;
+        width: 95%;
+        margin: auto;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 50px 0px;
+    }
+
+
+
+
+    .Explore-Card {
+        position: relative;
+        width: 80%;
+        padding: 20px 0px;
+    }
+
+
+    .Explore-Card img {
+        width: 100%;
+        position: relative;
+        opacity: 0.8;
+        border-radius: 20px;
+    }
+
+    .Explore-Card h2 {
+        position: absolute;
+        justify-content: center;
+        padding-left: 50px;
+        top: 50%;
+    }
+
+
+
+    .Learner-section {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .Learner-content {
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    .Learner-img {
+        width: 100%;
+
+    }
+
+    .Learner-img img {
+        width: 90%;
+    }
+
+    .Learner-section li::marker {
+        content: "✅ ";
+    }
+
+    .Learner-section li {
+        padding-left: 10px;
+    }
+
+    .owl-carousel {
+        padding: 50px 20px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .owl-carousel .item {
+        justify-content: center;
+        /* background-color: rgba(189, 186, 186, 0.2); */
+    }
+
+    .item .item-img {
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+        border-radius: 50%;
+    }
+
+
+    .item-img img {
+        width: 100%;
+    }
+
+
+
+    .nextstep-section {
+        position: relative;
+        display: block;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+
+    }
+
+    .nextstep .nextstep-img {
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .nextstep .nextstep-content {
+        padding-top: 20px;
+        justify-content: end;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .nextstep-img img {
+        width: 100%;
+    }
+
+    .nextstep .nextstep-content h2 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+}

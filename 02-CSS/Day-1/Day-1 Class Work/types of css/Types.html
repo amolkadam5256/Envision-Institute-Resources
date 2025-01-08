@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of css </title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .internal {
+            color: blue;
+        }
+
+        p {
+            color: darkgreen;
+            font-size: 16px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inline CSS Example -->
+    <h1 style="color: purple; font-size:32px;">Welcome to CSS Types Demo</h1>
+
+    <p style="font-size: 30px; text-align:center;">This is an example Types of CSS.</p>
+
+    <h2 style="color: pink; ">Inline CSS Example</h2>
+    <p style="background-color: blue;"> this is inline css result Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Sint aliquam, provident
+        dolores tempore consectetur neque, quo dolorem impedit dolorum, odio rerum tenetur! Molestias quas sint, sed
+        quae quidem libero sit.</p>
+
+    <h2 class="internal">Internal CSS Example</h2>
+    <p class="internal">This paragraph is styled using internal CSS defined in the <code>&lt;style&gt;</code> tag.</p>
+
+    <h2 class="External">External CSS Example</h2>
+    <p class="External">This paragraph would be styled using external CSS if linked. For demonstration, we will not link
+        an external
+        stylesheet here.</p>
+
+    <h2 class="External">List Example</h2>
+    <ul class="External">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <div>
+        <p>This paragraph is a des cendant of the div element and should be dark blue.</p>
+    </div>
+
+    <div id="footer">
+        <p>This is the footer section styled with an ID selector.</p>
+    </div>
+
+</body>
+
+</html>

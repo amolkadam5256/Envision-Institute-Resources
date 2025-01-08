@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.demo {
+    width: 100%;
+    height:100vh;
+    background-color: pink;
+    margin: auto;
+    display: flex;
+}
+
+.demo-inner-1 {
+    margin: auto;
+    width: 40%;
+}
+
+.demo-inner-1 img{
+    width:100%;
+}
+
+.demo-inner{
+    width:50%;
+    justify-content: center;
+    align-content: center;
+}
+
+.head{
+    text-align: center;
+    font-size: 22px;
+}
+
+.list-div{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.list-div .row-1{
+    display: flex;
+    padding-top:50px;
+    gap: 30px;
+
+}

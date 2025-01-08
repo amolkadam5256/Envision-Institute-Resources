@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li {
+    list-style: none;
+    align-items: baseline;
+
+}
+
+i {
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    color: rgb(0, 0, 0);
+}
+
+
+
+header {
+    display: block;
+}
+
+.header-slide {
+    padding: 10px 0px;
+    font-size: 20px;
+    background-color: #275c53;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav .logo {
+    margin-left: 40px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+.right-side-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.right-side-nav .ul-1 {
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+
+}
+
+.right-side-nav .ul-2 {
+    display: flex;
+    color: black;
+}
+
+.right-side-nav ul li {
+    padding: 8px 16px;
+    font-size: 18px;
+}
+
+/* hero section */
+
+section .hero {
+    width: 100%;
+    height: 80vh;
+}
+
+
+.hero img {
+    width: 100%;
+}
+
+/* vidio Section section  */
+
+.vidio-section {
+    width:100%;
+    display: block;
+
+}
+
+.video-head{
+    display: block;
+
+}
+
+.video-head h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0px;
+}
+
+.vidio-div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+
+}
+
+/* Teas & Infusions
+ section */
+
+ .flex-container{
+    width:100%;
+    display: block;
+ }
+
+ .our-product-head{
+    text-align: center;
+ }
+
+
+ .our-product-head h2{
+    font-size: 30px;
+ }
+
+.our-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    row-gap: 50px;
+}
+
+.our-product .row-sec {
+    width: 30%;
+}
+
+.row-sec h2 {
+    padding: 20px 0px;
+}
+
+.row-sec img {
+    width: 100%;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 50px 0px;
+}
+
+
+/* Best Selling Organic Products
+ */
+
+ .best-sealing{
+    background-color: pink;
+    display: block;
+
+ }
+
+ .best-sealing-head{
+    text-align: center;
+    padding: 20px 0px;
+ }
+
+ .best-sealling-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+
+ .sealling-1{
+    width:30%;
+    text-align: center;
+    padding-bottom: 30px;
+ }
+.sealling-1 img{
+    padding-bottom:10px;
+    width:100%;
+}
+
+.sealling-1 h2{
+    padding-bottom: 10px;
+}
+.sealling-1-btn{
+    padding:20px;
+}
+.sealling-1 button{
+    padding: 8px 16px;
+    border: none;
+    font-size: 20px;
+    color:black;
+    background-color:#29A552 ;
+    border-radius: 6px;
+}
+
+
+
+.demo {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+}
+
+.demo-inner-1 {
+    margin: auto;
+    width: 40%;
+}
+
+.demo-inner-1 img {
+    width: 100%;
+}
+
+.demo-inner {
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+}
+
+.head {
+    text-align: center;
+    font-size: 22px;
+}
+
+.list-div {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.list-div .row-1 {
+    display: flex;
+    padding-top: 50px;
+    gap: 30px;
+
+}
+
+
+.row-1 button{
+    font-size: 18px;
+    margin-left:10px;
+    padding: 12px 20px;
+    background-color: black;
+    color: white;
+    border:none;
+    outline: none;
+}   
+
+
+
+
+/* offer code section */
+
+
+.Combooffer{
+    display: block;
+}
+
+.offer-head{
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.offer-head h2{
+    font-size: 40px;
+    font-weight:900;
+}
+
+.offer-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.offer-1{
+    padding: 20px;
+    background-color: rgba(55, 55, 56, 0.1);
+    display: block;
+    width:22%;
+}
+
+.offer-1 img{
+    width: 100%;
+    padding-bottom:10px;
+}
+.offer-1 h2{
+    padding-bottom:10px;
+    font-size: 20px;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    }
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .column {
+    flex: 1 1 220px;
+    margin: 10px;
+    padding: 0 20px;
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color:blue;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    margin-left: 25px;
+    list-style-type:square;
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer ul li a:hover {
+    color: #f1f1f1;
+}
+
+footer .social-icons {
+    font-size: 20px;
+}
+
+footer .social-icons i {
+    color: #ffffff;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer .social-icons i:hover {
+    color: #ff0303;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+

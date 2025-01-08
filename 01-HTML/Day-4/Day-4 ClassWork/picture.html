@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picture Tag Example</title>
+
+    <style>
+        .pic{
+            width:1200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Picture Tag In Html </h1>
+
+    <picture style="width: 50%;">
+        <source class="pic"  srcset="/images/img-1.jpg" media="(min-width:1200px)">
+        <source class="pic"  srcset="/images/img-2.jpg" media="(min-width: 400px)">
+        <img  class="pic" src="/images/img-3.jpg" alt="Description of the image">
+    </picture>
+    
+</body>
+</html>

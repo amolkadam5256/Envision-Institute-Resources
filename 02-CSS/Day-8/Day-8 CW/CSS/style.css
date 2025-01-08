@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+:root{
+    --bg-color: red;
+    --text-color: white;
+}
+
+@font-face {
+    font-family:custome-foont-1;
+    src: url("../Fonts/Sanshine.ttf");
+}
+
+
+body {
+    background-color:var(--bg-color);
+    font-family:custome-foont-1;
+    
+}
+
+
+.outline-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: var(--bg-color);
+}
+ h3:hover{
+    background-color: red;
+ }
+
+
+.outline-container h3 {
+    font-size: 50px;
+    position: relative;
+    padding: 50px 10px;
+    color: var(--text-color);
+}
+
+
+.outline-container h3::before {
+    content: "";
+    width: 14%;
+    left: 20px;
+    height: 6px;
+    border-radius: 20px;
+    background-color: red;
+    position: absolute;
+    top: 120px;
+
+}
+
+.outline-container h3::after {
+    content: "";
+    width: 10%;
+    left: 20px;
+    height: 6px;
+    border-radius: 20px;
+    background-color: red;
+    position: absolute;
+    top: 135px;
+}
+
+.outline-container ul {
+    padding: 0px 20px;
+
+}
+.outline-container ul li:nth-child(2){
+    background-color: red;
+}
+
+
+.outline-container ul li:nth-child(even){
+    font-size: 30px;
+}
+
+.outline-container ul li:nth-child(odd){
+    font-size: 40px;
+    color: pink;
+}
+
+.outline-container ul li:first-child{
+    font-size:100px;
+}
+
+
+form input:focus{
+    background-color: red;
+}
+
+.outline-container ul li{
+    list-style: none;
+    padding: 5px 0px;
+}
+
+.outline-container ul li:hover {
+    outline: 2px solid red;
+}
+
+
+
+
+
+
+
+/* second outline-offset */
+
+
+
+.outline-offset {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+
+.outline-offset h3 {
+    font-size: 50px;
+    position: relative;
+    padding: 50px 18px;
+}
+
+
+.outline-offset h3::before {
+    content: "";
+    width: 14%;
+    left: 20px;
+    height: 6px;
+    border-radius: 20px;
+    background-color: red;
+    position: absolute;
+    top: 115px;
+
+}
+
+.outline-offset h3::after {
+    content: "";
+    width: 10%;
+    left: 20px;
+    height: 6px;
+    border-radius: 20px;
+    background-color: red;
+    position: absolute;
+    top: 130px;
+}
+
+
+.outline-offset .circle {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-clip: content-box;
+    background-image: url(https://images.unsplash.com/photo-1721332153289-0c46dc38981b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D);
+    object-fit: cover;
+
+    /* outline: 20px dotted pink; */
+    outline: 20px solid red;
+    outline-offset: -30px;
+    /* outline-offset:30px; */
+
+}
+
+/* outline-offset-negative */
+
+
+.outline-offset-negative {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.outline-offset-negative h3 {
+    font-size: 50px;
+    position: relative;
+    padding: 50px 18px;
+}
+
+
+.outline-offset-negative h3::before {
+    content: "";
+    width: 14%;
+    left: 20px;
+    height: 6px;
+    border-radius: 20px;
+    background-color: red;
+    position: absolute;
+    top: 115px;
+
+}
+
+.outline-offset-negative h3::after {
+    content: "";
+    width: 10%;
+    left: 20px;
+    height: 6px;
+    border-radius: 20px;
+    background-color: red;
+    position: absolute;
+    top: 130px;
+}
+
+
+.outline-offset-negative .circle {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-clip: content-box;
+    background-image: url(https://images.unsplash.com/photo-1721332153289-0c46dc38981b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D);
+    object-fit: cover;
+
+    outline: 20px dotted red;
+    outline-offset: 30px;
+
+}
+
+
+
+
+
+
+/* thirs file  */
+
+
+.object-fit {
+    display: block;
+}
+
+.object-fit h1 {
+    padding: 50px 10px;
+}
+
+.object-fit .object-1,
+.object-fit .object-2,
+.object-fit .object-3,
+.object-fit .object-4,
+.object-fit .object-5 {
+    width: 80%;
+    margin: auto;
+    display: block;
+    outline: 2px solid red;
+    outline-offset: -20px;
+
+}
+
+.object-1 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.object-2 img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.object-3 img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.object-4 img {
+    width: 100%;
+    object-fit: none;
+}
+
+.object-5 img {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+
+
+
+
+
+
+/* linear-gradient  */
+
+
+.linear-gradient {
+    width: 100%;
+    display: block;
+    height: 100vh;
+    margin: auto;
+}
+
+.linear {
+    width: 80%;
+    height: 100vh;
+    display: block;
+    margin: 0px auto;
+    /* background: linear-gradient(to bottom, yellow, pink, yellow, white, red, pink, yellow, red); */
+    /* background: linear-gradient(to left, yellow, pink, yellow, white, red, pink, yellow, red); */
+    /* background: linear-gradient(to right, yellow, pink, yellow, white, red, pink, yellow, red); */
+    /* background: linear-gradient(to top, yellow, pink, yellow, white, red, pink, yellow, red); */
+    /* background: linear-gradient(60deg, yellow, pink, yellow, white, red, pink, yellow, red); */
+    background: repeating-linear-gradient(to top, rgba(255, 0, 0, 0.5), rgba(241, 4, 4, 0.5), rgba(131, 241, 4, 0.5));
+    background: repeating-linear-gradient(to top, rgba(255, 0, 0, 0.5), rgba(241, 4, 4, 0.5), rgba(131, 241, 4, 0.5));
+}
+
+
+
+.radial-gradient {
+    width: 100%;
+    display: block;
+    height: 100vh;
+    margin: auto;
+}
+
+.radial {
+    width: 80%;
+    height: 100vh;
+    display: block;
+    margin: 0px auto;
+    /* background: radial-gradient([shape] [size] at [position], color-stop1, color-stop2, ...); */
+    background: radial-gradient(circle, red, blue, pink);
+    background: radial-gradient(ellipse, red, blue, pink);
+    background: repeating-radial-gradient(circle, red, yellow 20px, blue 40px);
+
+
+}
+
+
+
+
+
+/* clip path */
+
+.clip-path {
+    width: 500px;
+    height: 500px;
+    background: #3498db; 
+    position: relative;
+    clip-path: circle(50% at center);
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Additional style for the inner path */
+.path {
+    width: 200px;
+    height: 200px;
+    border-radius:20px;
+    background: #f39c12; /* Orange color */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+  
