@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/409c371b1b.js" crossorigin="anonymous"></script>
+
+    <style>
+        .mmm {
+            height: 40vh;
+            padding: 50px;
+            margin-bottom: 20px;
+            background-color: pink;
+        }
+
+        .mm {
+            margin: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container text-center">
+        <div class="row align-items-start mmm">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+
+        <div class="row align-items-center mmm">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+
+
+        <div class="row align-items-end mmm">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Horizontal alignment  -->
+
+    <div class="container text-center">
+        <div class="row justify-content-start mmm">
+            <div class="col-4">
+                justify-content-start
+            </div>
+            <div class="col-4">
+                justify-content-start
+            </div>
+        </div>
+        <div class="row justify-content-center mmm">
+            <div class="col-4">
+                justify-content-center
+            </div>
+            <div class="col-4">
+                justify-content-center
+            </div>
+        </div>
+        <div class="row justify-content-end mmm">
+            <div class="col-4">
+                justify-content-end
+            </div>
+            <div class="col-4">
+                justify-content-end
+            </div>
+        </div>
+        <div class="row justify-content-around mmm">
+            <div class="col-4">
+                justify-content-around
+            </div>
+            <div class="col-4">
+                justify-content-around
+            </div>
+        </div>
+        <div class="row justify-content-between mmm">
+            <div class="col-4">
+                justify-content-between
+            </div>
+            <div class="col-4">
+                justify-content-between
+            </div>
+        </div>
+        <div class="row justify-content-evenly mmm">
+            <div class="col-4">
+                justify-content-evenly
+            </div>
+            <div class="col-4">
+                justify-content-evenly
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Column wrapping  -->
+
+
+    <div class="container">
+        <div class="row mmm">
+          <div class="col-9">.col-9</div>
+          <div class="col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+          <div class="col-6">.col-6<br>Subsequent columns continue along the new line.</div>
+        </div>
+      </div>
+
+    <!-- Bootstrap JS -->
+    <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,452 @@
+/* Reset browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root variables */
+:root {
+    --primary-color: #FF4F81;
+    --secondary-color: #2ecc71;
+    --font-family: 'Roboto', sans-serif;
+    --spacing: 8px 16px;
+    --font-size-comman: 16px;
+}
+
+/* Custom fonts */
+@font-face {
+    font-family: 'Child';
+    src: url("../Fonts/Child Hood.otf");
+}
+
+@font-face {
+    font-family: 'Rockybilly_font';
+    src: url("../Fonts/Rockybilly.ttf");
+}
+
+/* Common styles */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #333;
+    scrollbar-width: none;
+    /* Hides scrollbar for Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Hides scrollbar for WebKit browsers like Chrome, Safari */
+
+}
+
+/* Header Contact Section */
+.header-contact {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+}
+
+.header-contact .contact-section {
+    display: flex;
+    gap: 30px;
+}
+
+.header-contact .contact-section p {
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color: white;
+}
+
+.header-contact .contact-section p i {
+    font-size: var(--font-size-comman);
+    font-weight: 900;
+    padding-right: 5px;
+}
+
+.header-contact .contact-section p span {
+    font-weight: 500;
+    color: white;
+}
+
+.header-contact .contact-section p span:hover {
+    color: rgb(63, 63, 63);
+}
+
+.header-contact .social-media-section ul {
+    display: flex;
+    gap: 10px;
+}
+
+.header-contact .social-media-section ul li i {
+    color: white;
+    background-color: #333;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.header-contact .social-media-section ul li i:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 3px 10px white;
+    outline: 1px solid white;
+}
+
+/* Navigation Bar */
+
+
+header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 2px 4px 5px rgba(19, 19, 19, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav .logo-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+    padding: 2px 0px;
+}
+
+header nav .logo-section h1::before {
+    content: "Computer";
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    font-size: 1.2rem;
+}
+
+header nav .logo-section h2 {
+    font-size: 1rem;
+}
+
+
+
+/* manu section  */
+
+
+.menu-icon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 40px;
+    /* Adjusted for a smaller size */
+    height: 40px;
+    /* Keep it square for the icon */
+    cursor: pointer;
+}
+
+label span {
+    background: #000;
+    border-radius: 10px;
+    height: 3px;
+    /* Smaller thickness */
+    margin: 5px 0;
+    /* Reduced spacing */
+    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1) {
+    width: 20px;
+    /* Adjusted width */
+}
+
+span:nth-of-type(2) {
+    width: 30px;
+    /* Adjusted width */
+}
+
+span:nth-of-type(3) {
+    width: 25px;
+    /* Adjusted width */
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked~span:nth-of-type(1) {
+    transform-origin: bottom;
+    transform: rotateZ(45deg) translate(5px, 2px);
+    width: 18px;
+}
+
+input[type="checkbox"]:checked~span:nth-of-type(2) {
+    width: 35px;
+    transform-origin: top;
+    transform: rotateZ(-45deg);
+}
+
+input[type="checkbox"]:checked~span:nth-of-type(3) {
+    transform-origin: bottom;
+    width: 18px;
+    /* Match the adjusted width */
+    transform: translate(15px, -8px) rotateZ(45deg);
+}
+
+
+
+
+/* manu bar close  */
+
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Base link styles */
+
+header nav ul li a {
+    display: inline-block;
+    padding: 8px 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Hover underline effect */
+header nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--primary-color);
+    transition: width 0.4s ease-in-out;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+    color: var(--primary-color);
+}
+
+
+
+
+
+/* Media Queries  for Header Section*/
+
+/* 
+@media only screen and (min-width: 320px) {}
+    @media only screen and (min-width: 768px) {}
+        @media only screen and (min-width: 992px){}*/
+
+/* Styles for screens between 0px and 767px */
+@media only screen and (min-width:0px) and (max-width: 767px) {
+    .header-contact {
+        justify-content: center;
+        margin: auto;
+        display: block;
+
+    }
+
+
+    .header-contact .contact-section p {
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        color: white;
+    }
+
+    .header-contact .social-media-section ul li i {
+        color: white;
+        background-color: #333;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .header-contact .contact-section {
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+
+    .header-contact .social-media-section ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+    }
+
+
+
+}
+
+/* Styles for screens between 768px and 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-contact {
+        .header-contact {
+            background-color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 30px;
+        }
+
+    }
+}
+
+/* Styles for screens 992px and above */
+/* @media only screen and (min-width: 992px) {
+    .header-contact {
+        .header-contact {
+            background-color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 30px;
+        }
+
+    }
+} */
+
+
+
+
+/* navbar styles */
+
+
+@media only screen and (min-width:0px) and (max-width: 767px) {
+
+    header {
+        background-color: #fff;
+        position: sticky;
+        top: 0;
+        box-shadow: 2px 4px 5px rgba(19, 19, 19, 0.5);
+
+    }
+
+    header nav {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    header nav .logo-section h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        position: relative;
+        font-size: 3rem;
+        padding: 0px 0px;
+    }
+
+    header nav .logo-section h1::before {
+        content: "Computer";
+        position: absolute;
+        top: 50px;
+        left: 25%;
+        font-size: 1rem;
+    }
+
+    header nav .logo-section h2 {
+        font-size: 1rem;
+    }
+
+    /* manu bar  */
+
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+
+    }
+
+
+    /*  onlick menu bar */
+
+    header nav ul {
+        position: absolute;
+        top: 77px;
+        left: 0;
+        display: none;
+        width: 100%;
+        padding: 30px 10px;
+        justify-content: space-around;
+        background-color: #EEEEEE;
+        box-shadow: 2px 4px 5px rgba(19, 19, 19, 0.5);
+    }
+
+
+
+    header nav ul.menu-icon+label input:checked~ul {
+        display: block;
+        /* Show when the checkbox is checked */
+    }
+
+
+
+    /* Base link styles */
+    header nav ul li {
+        padding: 10px 0px;
+    }
+
+    header nav ul li a:hover {
+        margin-left: 5px;
+    }
+
+
+
+}
+
+
+
+/* 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+    header {
+        background-color: #ffffff;
+        position: sticky;
+        top: 0;
+        box-shadow: 2px 4px 5px rgba(19, 19, 19, 0.5);
+
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+
+} */
+
+
+
+
+
+.hidden {
+    transform: translateY(-100%);
+}

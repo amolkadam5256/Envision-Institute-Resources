@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:gainsboro;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    letter-spacing: 2px;
+}
+
+.sub-heading {
+    color: rgb(201, 161, 32);
+    padding-left: 30px;
+}
+
+ul>li {
+    padding-left: 60px;
+    padding-bottom:4px;
+}
+
+#demo1,
+.demo2,
+.demo3{
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+
+
+
+img[src]{
+    padding:60px;
+    border: 10px solid red;
+}
+a[href]{
+    display:flex;
+    padding:20px;
+    border: 10px solid red;
+    color: rgb(0, 0, 0);
+}

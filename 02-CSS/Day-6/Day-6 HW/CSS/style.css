@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    color: black;
+}
+
+
+.hero{
+    display:flex;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+    position:relative;
+    padding:40px 0px ;
+}
+
+.hero-1{
+    width:30%;
+    display: block;
+    position:relative;
+}
+
+.hero-1 img{
+    position: relative;
+    width: 100%;
+}
+
+.hero-1 h3{
+    position:absolute;
+    top: 0;
+    z-index:999;
+    padding: 10px 20px;
+    font-size: 30px;
+    background-color:gray;
+}

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li {
+    list-style: none;
+
+}
+
+i {
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    color: rgb(0, 0, 0);
+}
+
+
+
+header {
+    display: block;
+}
+.header-slide{
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav .logo {
+    margin-left: 40px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+.right-side-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.right-side-nav .ul-1 {
+    display: flex;
+    margin-right: 50px;
+
+}
+
+.right-side-nav .ul-2 {
+    display: flex;
+    color: black;
+}
+
+.right-side-nav ul li{
+    padding:8px 16px;
+    font-size: 18px;
+}
+
+
+section .hero{
+    width:100%;
+    height:80vh;
+}
+
+
+.hero img{
+    width:100%;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-top:50px;
+}
+
+.flex-container .row-sec{
+    width:30%;
+}
+
+.row-sec img{
+    width:100%;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 50px 0px;
+}
+
+
+
+
+
+
+
+
+.demo {
+    width: 100%;
+    height:100vh;
+    background-color: pink;
+    margin: auto;
+    display: flex;
+}
+
+.demo-inner-1 {
+    margin: auto;
+    width: 40%;
+}
+
+.demo-inner-1 img{
+    width:100%;
+}
+
+.demo-inner{
+    width:50%;
+    justify-content: center;
+    align-content: center;
+}
+
+.head{
+    text-align: center;
+    font-size: 22px;
+}
+
+.list-div{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.list-div .row-1{
+    display: flex;
+    padding-top:50px;
+    gap: 30px;
+
+}

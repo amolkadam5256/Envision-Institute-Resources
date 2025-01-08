@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/409c371b1b.js" crossorigin="anonymous"></script>
+
+    <style>
+        .mmm {
+            height: 40vh;
+            padding: 50px;
+            margin-bottom: 20px;
+            background-color: pink;
+        }
+
+        .mm {
+            margin: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        Open Offcanvas
+    </button>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            This is some content inside the offcanvas. You can add anything here.
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <button type="button" class="btn-close" aria-label="Close"></button>
+    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+
+
+
+    <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Click me for more info">
+        Success Button
+      </button>
+      
+      <!-- Tooltip Initialization Script -->
+      <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      </script>
+      
+
+    <!-- Bootstrap JS -->
+    <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
