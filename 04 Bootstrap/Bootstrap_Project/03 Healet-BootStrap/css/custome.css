@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+/* fonts import */
+@import url("../fonts/octin_sports_rg.ttf");
+
+
+@font-face {
+    font-family: custon-font-1;
+    src: url(../fonts/fontawesome-webfont.ttf);
+    src: url(../fonts/fontawesome-webfont.woff);
+    src: url(../fonts/fontawesome-webfont.woff2);
+}
+
+@font-face {
+    font-family: custon-font-2;
+    src: url(../fonts/octin_sports_rg.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #0c0c0c;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    /* Adjust based on the height of the navbar */
+}
+
+
+.hero-bg {
+    background-image: url('../images/slider-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, bottom right;
+    background-attachment: scroll;
+    background-color: #eaeaea;
+    position: relative;
+}
+
+
+/* Remove navbar background color */
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-toggler {
+    border: none !important;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+.navbar .navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 20px 30px;
+}
+
+.collapse {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    color: red;
+}
+
+.navbar-toggler i{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding:12px 16px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+/* Increase font size for the nav items */
+.navbar-nav .nav-link {
+    padding: 0px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item {
+    margin-bottom: 15px;
+    /* Optional: Add spacing between items */
+}
+
+
+
+/* hero-content */
+.hero-content {
+    padding: 50px 0px 100px 10px;
+
+}
+
+.hero-content .hero-title {
+    font-size: 50px;
+    font-family: custon-font-1, 'Playfair Display', serif;
+    font-weight: 900;
+    padding-left: 5px;
+    letter-spacing: 2px;
+    
+
+}
