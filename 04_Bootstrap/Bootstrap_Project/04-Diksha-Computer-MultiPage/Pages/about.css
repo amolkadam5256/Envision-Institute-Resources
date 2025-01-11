@@ -1,0 +1,122 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Inter', sans-serif;
+    min-width: 350px;
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Card Slider Section */
+  .cardSlider__section {
+    position: relative;
+  }
+  
+  .swiper {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  
+  .cardItem {
+    width: 33.333%;
+    padding: 15px;
+  }
+  
+  .card__wrapper {
+    height: 100%;
+    border: 1px solid #ddd;
+    padding: 45px 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .card__wrapper:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .card__desc {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .card__btn {
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card__btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Pagination */
+  .swiper-pagination {
+    display: none;
+    justify-content: center;
+    bottom: -30px;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #000;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+    color: #000;
+  }
+  
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 30px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .cardItem {
+      width: 100%;
+    }
+  
+    .swiper-pagination {
+      display: flex;
+    }
+  
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: flex;
+    }
+  }
+  
