@@ -1,0 +1,375 @@
+.p-b90 {
+    padding-bottom: 90px;
+}
+
+.p-t120 {
+    padding-top: 120px;
+}
+
+.m-b30 {
+    margin-bottom: 30px;
+}
+
+.section-head.center.wt-small-separator-outer {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-head {
+    position: relative;
+}
+
+.site-text-primary,
+.wt-small-separator {
+    color: #ea130e;
+}
+
+.wt-small-separator {
+    font-family: "Heebo", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-right: 40px;
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.section-head.center .wt-small-separator div.sep-leaf-left {
+    position: relative;
+}
+
+.section-head.center .wt-small-separator div.sep-leaf-left:before,
+.section-head.center .wt-small-separator div.sep-leaf-left:after {
+    background-color: #ea130e;
+}
+
+.section-head.center .wt-small-separator div.sep-leaf-left:before {
+    right: -20px;
+    width: 10px;
+}
+
+.section-head.center .wt-small-separator div.sep-leaf-left:before,
+.section-head.center .wt-small-separator div.sep-leaf-left:after {
+    position: absolute;
+    content: '';
+    height: 22px;
+    bottom: 0px;
+    top: 0px;
+    transform: skew(-20deg);
+}
+
+.section-head.center .wt-small-separator div.sep-leaf-left:after {
+    right: -27px;
+    width: 4px;
+}
+
+.section-head.center.wt-small-separator-outer h2 {
+    max-width: 630px;
+    margin: 0px auto;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+    color: #000;
+}
+
+.service-icon-box-two {
+    position: relative;
+    padding: 40px 40px 40px 40px;
+    border: 1px solid #e7e7e7;
+}
+
+.service-icon-box-two .wt-icon-box-wraper {
+    margin-bottom: 30px;
+}
+
+.wt-icon-box-wraper {
+    position: relative;
+}
+
+.icon-xl.inline-icon {
+    width: auto;
+}
+
+.icon-xl.inline-icon {
+    text-align: left !important;
+}
+
+.icon-xld,
+.icon-xl,
+.icon-lg,
+.icon-md,
+.icon-sm,
+.icon-xs {
+    display: inline-block;
+}
+
+.site-text-primary,
+.wt-small-separator {
+    color: #ea130e;
+}
+
+.icon-xl i {
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.icon-xld i,
+.icon-xl i,
+.icon-lg i,
+.icon-md i,
+.icon-sm i,
+.icon-xs i {
+    vertical-align: middle;
+}
+
+.wt-icon-box-wraper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.service-icon-box-two .service-icon-box-title .wt-title {
+    margin-bottom: 30px;
+    padding-right: 60px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a {
+    color: #1e1e1e;
+    outline: 0px none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.cons-contact-form .form-control {
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #000;
+    height: 52px;
+    padding: 10px 0px;
+    background-color: transparent;
+}
+
+.form-control {
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 0px;
+    border: none;
+}
+
+.cons-contact-form .form-control {
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #000;
+    padding: 10px 0px;
+    background-color: transparent;
+}
+
+.cons-contact-form textarea.form-control {
+    padding-top: 15px;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.site-button.sb-bdr-dark {
+    border-right: 6px solid #000;
+}
+
+.site-button {
+    background-color: #ea130e;
+}
+
+.site-button {
+    outline: none;
+    color: #fff;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-table;
+    background-color: #ea130e;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.5s all ease;
+}
+
+.site-button:hover {
+    background-color: #e7e7e7;
+    color: #000;
+}
+
+.cons-contact-form .form-control {
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #000;
+    height: 52px;
+    padding: 10px 0px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 0px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cons-contact-form .form-control:focus {
+    border-color: #ea130e;
+    box-shadow: 0 0 5px rgba(234, 19, 14, 0.5);
+}
+
+.cons-contact-form textarea.form-control {
+    padding-top: 15px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.service-button {
+    background-color: #ea130e;
+    outline: none;
+    color: #fff;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-button:hover {
+    background-color: #e7e7e7;
+    color: #000;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-group i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.form-group input,
+.form-group textarea {
+    padding-left: 40px;
+    /* Adjust space for the icon */
+}
+
+.section-head.left {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.section-head.left h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.section-head.left p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.cons-contact-form .form-control::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.service-button.sb-bdr-dark {
+    border-right: 6px solid #000;
+}
+
+
+/* -----------------company----------------------- */
+.company {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img {
+    width: 100%;
+    margin: 1rem 0rem 0rem 2rem;
+}
+
+.img img {
+    width: 100%;
+}
+
+.company-info {
+    width: 100%;
+    margin-right: 4rem;
+}
+
+.company-info span {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.company-info span .our {
+    color: #ffdc0e;
+}
+
+.company-info p {
+    font-size: 1.1rem;
+}
+
+/* ----------------------------------------------- */
+@media (max-width: 900px) {
+    .company {
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .company-info {
+        display: flex;
+        width: 100%;
+        margin-right: 0rem;
+        margin-left: 1rem;
+    }
+
+    .company-info p {
+        margin-right: 2rem;
+        text-align: center;
+    }
+
+    .company-info span {
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}

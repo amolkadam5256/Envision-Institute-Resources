@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+/* fonts import */
+@import url("../fonts/octin_sports_rg.ttf");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+}
+
+/* header */
+
+
+
+.snip1189 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.snip1189 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1189 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+}
+
+.snip1189 a {
+  padding: 0.5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: black;
+  position: relative;
+  text-decoration: none;
+}
+
+.snip1189 a:before,
+.snip1189 a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  color: black;
+  opacity: 0;
+}
+
+.snip1189 a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #c0392b;
+  border-top: 3px solid #c0392b;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+
+.snip1189 a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #c0392b;
+  border-bottom: 3px solid #c0392b;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+.snip1189 a:hover,
+.snip1189 .current a {
+  color: black;
+}
+
+.snip1189 a:hover:before,
+.snip1189 .current a:before,
+.snip1189 a:hover:after,
+.snip1189 .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+.hero-section {
+  position: relative;
+  justify-content: center;
+}
+
+.hero {
+  background-image: url('../images/welcome-banner.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 200px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #aaa;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+.button-anim {
+  background-color: #c47135;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.button-anim:before,
+.button-anim:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.button-anim:before {
+  border-color: #c47135;
+  border-left-width: 2px;
+  border-top-width: 2px;
+  left: -5px;
+  top: -5px;
+}
+
+.button-anim:after {
+  border-bottom-width: 2px;
+  border-color: #c47135;
+  border-right-width: 2px;
+  bottom: -5px;
+  right: -5px;
+}
+
+.button-anim:hover {
+  background-color: #c47135;
+}
+
+.button-anim:hover:before,
+.button-anim:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .hero {
+    margin-bottom: 00px;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+
+  }
+
+  .hero p {
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+}
+
+
+/* Find Your Dream Car
+ */
+
+.deream_car {
+  background-color: white;
+  box-shadow: 5px 5px 50px black;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  padding: 40px 20px;
+
+
+}
+
+
+@media (max-width: 768px) {
+
+  .deream_car {
+    background-color: white;
+    box-shadow: 5px 5px 50px black;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+
+
+/* card css */
+
+/* General card styling */
+.custom-card {
+  position: relative;
+  margin-top: 100px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: black;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.custom-card .image {
+  padding: 100px 20px;
+}
+
+.custom-card .image img {
+  width: 100%;
+  vertical-align: top;
+  transition: transform 0.25s ease;
+}
+
+.custom-card .card-body {
+  padding: 25px 20px 25px;
+  position: relative;
+}
+
+.custom-card .date {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #700877;
+  font-size: 18px;
+  font-weight: 700;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 10px 0;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  top: -25px;
+}
+
+.custom-card .date span {
+  display: block;
+  line-height: 14px;
+}
+
+.custom-card .date .month {
+  font-size: 11px;
+}
+
+.custom-card h3,
+.custom-card p {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-card h3 {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-bottom: 5px;
+}
+
+.custom-card p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  margin-bottom: 0;
+}
+
+.custom-card a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Hover effect */
+.custom-card:hover .image img,
+.custom-card.hover .image img {
+  transform: scale(1.1);
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 576px) {
+  .custom-card .date {
+    top: -20px;
+  }
+}
+.card-section{
+  margin:100px 0px;
+}
+
+/* cursour
+ */
+  
