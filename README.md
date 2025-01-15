@@ -62,37 +62,6 @@ This repository is all about:
 
 ---
 
-## 📂 Repository Structure
-
-Here's how I’ve organized this repo to make navigation easy:  
-
-```plaintext
-Full-Stack-Java-Developer/
-│
-├── Frontend/
-│   ├── HTML/
-│   ├── CSS/
-│   ├── JavaScript/
-│   ├── React/
-│
-├── Backend/
-│   ├── CoreJava/
-│   ├── SpringBoot/
-│   ├── RESTAPI/
-│
-├── Database/
-│   ├── SQL/
-│   ├── MongoDB/
-│
-├── Projects/
-│   ├── Mini-Projects/
-│   └── Full-Stack-Projects/
-│
-└── Resources/
-    ├── Books.md
-    ├── Courses.md
-    └── Tools.md
-```
 
 ---
 
