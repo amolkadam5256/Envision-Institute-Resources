@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 CW </title>
+</head>
+
+
+<body>
+
+    <h2>1. Write a program to print your name using function. </h2>
+    <p id="demo"></p>
+    <h2>2. Write a program to print the average marks of three subjects of a student. </h2>
+    <p id="demo2"></p>
+    <h2>3. Write a program to calculate area of circle using function. </h2>
+    <p id="demo3"></p>
+    <h2>4. Write a program to calculate perimeter of a triangle using function. </h2>
+    <p id="demo4"></p>
+    <h2>5. Write a program to check whether the number is positive or negative using function </h2>
+    <p id="demo5"></p>
+    <h2>6. Write a program to print the square of a number using function. </h2>
+    <p id="demo6"></p>
+    <h2>6. Write a program to print the Cube of a number using function. </h2>
+    <p id="demo7"></p>
+    <h2>7. Write a program to check the greater number among two numbers using function. </h2>
+    <p id="demo8"></p>
+
+    <script>
+        {
+
+            function fullName() {
+                let fullName = prompt(`Enter Your Full name :`);
+                document.getElementById("demo").innerText = `Full name is : ${fullName}`;
+                console.log(`Full Name is: ${fullName}`);
+            }
+
+        }
+
+        {
+            function avrage() {
+
+                let num1 = parseInt(prompt(`Enter Num 1 : `));
+                let num2 = parseInt(prompt(`Enter Num 2 : `));
+                let num3 = parseInt(prompt(`Enter Num 3 : `));
+
+                avg = (num1 + num2 + num3) / 3;
+                document.getElementById("demo2").innerText = `Avrage Of Three Number  is : ${avg}`;
+
+            }
+
+        }
+
+        {
+            // Area=π×r2
+            function areaOfCircle() {
+                let r = parseInt(prompt(`Enter Radius of Circle :`));
+                let area = Math.PI * Math.pow(r, 2); // Corrected formula
+
+                document.getElementById("demo3").innerText = `Area of Circle is :${area.toFixed(2)}`
+            }
+
+        }
+
+
+        {
+            function parimeterOftringle() {
+                let side1 = parseInt(prompt(`Enter Side one of :`));
+                let side2 = parseInt(prompt(`Enter Side Two of :`));
+                let side3 = parseInt(prompt(`Enter Side Three of :`));
+
+                Perimeter = (side1 + side2 + side3);
+                document.getElementById("demo4").innerText = `perimeter of a triangle is  :${Perimeter}`;
+
+            }
+
+        }
+
+        {
+            function OddEven() {
+                let num1 = parseInt(prompt(`Enter Side one of :`));
+                let result;
+
+                if (num1 % 2 == 0) {
+                    result = `Even Number`;
+                }
+                else {
+                    result = `Odd Number`;
+                }
+
+                document.getElementById("demo5").innerText = `Number is  :${result}`;
+            }
+
+        }
+
+        {
+            function square() {
+                let num1 = parseInt(prompt(`Enter  one number :`));
+                result = num1 * num1;
+                document.getElementById("demo6").innerText = `square of number is   :${result}`;
+
+            }
+        }
+
+        {
+            function Cube() {
+                let num1 = parseInt(prompt(`Enter  one number :`));
+                result = num1 * num1 * num1;
+                document.getElementById("demo7").innerText = `Cube of Number is   :${result}`;
+
+            }
+        }
+        {
+
+            function GreaterNum() {
+                let num1 = parseInt(prompt(`Enter num1:`));
+                let num2 = parseInt(prompt(`Enter num2:`));
+                let result;
+
+                if (num1 > num2) {
+                    result = `Num1 (${num1}) is Greater`;
+                } else if (num1 < num2) {
+                    result = `Num2 (${num2}) is Greater`;
+                } else {
+                    result = `Both numbers are Equal`;
+                }
+                document.getElementById("demo8").innerText = `Result: ${result}`;
+
+            }
+        }
+
+
+
+        fullName();
+        avrage();
+        areaOfCircle();
+        parimeterOftringle();
+        OddEven();
+        square();
+        Cube();
+        GreaterNum();
+
+
+    </script>
+</body>
+
+</html>

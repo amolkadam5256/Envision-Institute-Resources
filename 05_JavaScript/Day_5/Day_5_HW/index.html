@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 HW</title>
+</head>
+
+<body>
+    <!-- question 1 -->
+    <h2>1. Write a program to calculate Addition, Substraction, Multiplication, Division of two numbers in the same
+        program using functions.</h2>
+    <p id="Addition"></p>
+    <p id="Substraction"></p>
+    <p id="Multiplication"></p>
+    <p id="Division"></p>
+
+    <!-- Question 2 -->
+    <h2>Write a program to print the gross salary of the employee depending upon his basic salary using elseif and
+        function.</h2>
+    <p id="result"></p>
+
+    <!-- Question 3 -->
+    <h2>3. Calculate the area of a triangle using function.</h2>
+    <p id="TriangleArea"></p>
+
+    <!-- Question 4 -->
+    <h2>4. Calculate the circumference of a circle using function.</h2>
+    <p id="Circumference"></p>
+
+    <!-- Question 5 -->
+    <h2>5. Check whether a number is even or odd using function.</h2>
+    <p id="EvenOdd"></p>
+
+    <!-- Question 6 -->
+    <h2>6. Check whether a number is prime or not using function.</h2>
+    <p id="PrimeNumber"></p>
+
+    <!-- Question 7 -->
+    <h2>7. Calculate the perimeter of a rectangle using function.</h2>
+    <p id="RectanglePerimeter"></p>
+
+    <script>
+
+        {
+
+            // Get user inputs and convert them to numbers
+            let num1 = parseFloat(prompt("Enter Num1 :"));
+            let num2 = parseFloat(prompt("Enter Num2 :"));
+
+            // Function to perform addition
+            function Addition() {
+                return num1 + num2;
+            }
+
+            // Function to perform subtraction
+            function Substraction() {
+                return num1 - num2;
+            }
+
+            // Function to perform multiplication
+            function Multiplication() {
+                return num1 * num2;
+            }
+
+            // Function to perform division
+            function Division() {
+                // Check for division by zero
+                if (num2 === 0) {
+                    return "Division by zero is not allowed.";
+                }
+                return num1 / num2;
+            }
+
+            // Display the results in respective elements
+            document.getElementById("Addition").innerText = `Addition: ${Addition()}`;
+            document.getElementById("Substraction").innerText = `Substraction: ${Substraction()}`;
+            document.getElementById("Multiplication").innerText = `Multiplication: ${Multiplication()}`;
+            document.getElementById("Division").innerText = `Division: ${Division()}`;
+
+        }
+
+
+        // Function to calculate gross salary
+        function calculateGrossSalary(basicSalary) {
+            let grossSalary;
+
+            // Calculating gross salary based on basic salary using if-else if
+            if (basicSalary <= 10000) {
+                grossSalary = basicSalary + (basicSalary * 0.2) + (basicSalary * 0.8); // 20% HRA, 8% DA
+            } else if (basicSalary <= 20000) {
+                grossSalary = basicSalary + (basicSalary * 0.25) + (basicSalary * 0.9); // 25% HRA, 9% DA
+            } else if (basicSalary <= 30000) {
+                grossSalary = basicSalary + (basicSalary * 0.3) + (basicSalary * 0.95); // 30% HRA, 9.5% DA
+            } else {
+                grossSalary = basicSalary + (basicSalary * 0.35) + (basicSalary * 1.0); // 35% HRA, 10% DA
+            }
+
+            return grossSalary;
+        }
+
+        // Taking input from the user
+        let basicSalary = parseFloat(prompt("Enter the basic salary of the employee:"));
+
+        // Call the function and display the result
+        let grossSalary = calculateGrossSalary(basicSalary);
+        document.getElementById("result").innerText = `The gross salary of the employee is: ${grossSalary.toFixed(2)}`;
+
+        {
+
+            // Function to calculate area of triangle
+            function calculateAreaOfTriangle(base, height) {
+                return (base * height) / 2;
+            }
+
+
+            // Taking input from the user for area calculation
+            let base = parseFloat(prompt("Enter the base of the triangle:"));
+            let height = parseFloat(prompt("Enter the height of the triangle:"));
+            let areaOfTriangle = calculateAreaOfTriangle(base, height);
+            document.getElementById("TriangleArea").innerText = `Area of Triangle: ${areaOfTriangle.toFixed(2)}`;
+
+        }
+
+        
+
+        {
+
+            // Function to calculate circumference of circle
+            function calculateCircumference(radius) {
+                return 2 * Math.PI * radius;
+            }
+
+            // Taking input from the user for circumference calculation
+            let radius = parseFloat(prompt("Enter the radius of the circle:"));
+            let circumference = calculateCircumference(radius);
+            document.getElementById("Circumference").innerText = `Circumference of Circle: ${circumference.toFixed(2)}`;
+
+        }
+
+
+
+        {
+
+            // Function to check if a number is even or odd
+            function checkEvenOdd(num) {
+                return num % 2 === 0 ? "Even" : "Odd";
+            }
+
+            // Taking input from the user for even/odd check
+            let checkNum = parseInt(prompt("Enter a number to check if it is even or odd:"));
+            let evenOddResult = checkEvenOdd(checkNum);
+            document.getElementById("EvenOdd").innerText = `The number is: ${evenOddResult}`;
+
+        }
+
+
+
+        {
+
+            // Function to check if a number is prime
+            function checkPrime(num) {
+                if (num <= 1) return "Not Prime";
+                for (let i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i === 0) return "Not Prime";
+                }
+                return "Prime";
+            }
+
+            // Taking input from the user for prime check
+            let primeNum = parseInt(prompt("Enter a number to check if it is prime:"));
+            let primeResult = checkPrime(primeNum);
+            document.getElementById("PrimeNumber").innerText = `The number is: ${primeResult}`;
+
+        }
+
+
+        {
+
+            // Function to calculate perimeter of rectangle
+            function calculatePerimeterOfRectangle(length, width) {
+                return 2 * (length + width);
+            }
+
+            // Taking input from the user for perimeter calculation
+            let length = parseFloat(prompt("Enter the length of the rectangle:"));
+            let width = parseFloat(prompt("Enter the width of the rectangle:"));
+            let perimeterOfRectangle = calculatePerimeterOfRectangle(length, width);
+            document.getElementById("RectanglePerimeter").innerText = `Perimeter of Rectangle: ${perimeterOfRectangle.toFixed(2)}`;
+        }
+
+    </script>
+</body>
+
+</html>
