@@ -9,7 +9,7 @@ Whether you're a beginner 🌱 or an experienced developer 💻, this repo is de
 ## 🎯 About Me
 
 👨‍💻 **Who Am I?**  
-I’m a self-driven developer 🧑‍💻, currently pursuing my **MCA** 🎓 while working on real-world projects 🌍 and expanding my expertise in full-stack development. From building dynamic frontend pages 🖥️ to creating scalable backend systems 🛠️, I love turning ideas 💡 into functional solutions.
+I’m a self-driven developer 🧑‍💻, currently pursuing my **BSC.CS** 🎓 while working on real-world projects 🌍 and expanding my expertise in full-stack development. From building dynamic frontend pages 🖥️ to creating scalable backend systems 🛠️, I love turning ideas 💡 into functional solutions.
 
 🎨 **What Drives Me?**  
 - **Creating impactful applications** that solve real-world problems 🌐.
