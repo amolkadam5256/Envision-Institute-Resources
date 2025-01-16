@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Changes</title>
+    <style>
+        #colorImage {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Change Styles and Image</h1>
+
+    <!-- Dropdown to change background image -->
+    <label for="bgImage">Change Background Image: </label>
+    <select id="bgImage" onchange="changeBackgroundImage(this)">
+        <option value="image1.jpg">Image 1</option>
+        <option value="image2.jpg">Image 2</option>
+        <option value="image3.jpg">Image 3</option>
+    </select>
+    <br><br>
+
+    <!-- Dropdown to change background color -->
+    <label for="bgColor">Change Background Color: </label>
+    <select id="bgColor" onchange="changeBackgroundColor(this)">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+    <br><br>
+
+    <!-- Button to change font family -->
+    <p id="text">This is a sample text.</p>
+    <button onclick="changeFontFamily()">Change Font</button>
+    <br><br>
+
+    <!-- Buttons to change image based on color -->
+    <button onclick="changeImage('red')">Red</button>
+    <button onclick="changeImage('blue')">Blue</button>
+    <button onclick="changeImage('green')">Green</button>
+
+    <br><br>
+    <img id="colorImage" src="default.jpg" alt="Image">
+
+    <script>
+        function changeBackgroundImage(select) {
+            document.body.style.backgroundImage = `url(${select.value})`;
+        }
+
+        function changeBackgroundColor(select) {
+            document.body.style.backgroundColor = select.value;
+        }
+
+        function changeFontFamily() {
+            document.getElementById("text").style.fontFamily = "Arial, sans-serif";
+        }
+
+        function changeImage(color) {
+            const img = document.getElementById('colorImage');
+            if (color === 'red') {
+                img.src = 'red-image.jpg';
+            } else if (color === 'blue') {
+                img.src = 'blue-image.jpg';
+            } else if (color === 'green') {
+                img.src = 'green-image.jpg';
+            }
+        }
+    </script>
+</body>
+
+</html>

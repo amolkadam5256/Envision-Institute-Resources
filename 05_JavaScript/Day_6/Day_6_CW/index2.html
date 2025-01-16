@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Class Work - Form Events</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input {
+            padding: 10px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: blue;
+            background-color: #f0f8ff;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        .success {
+            color: green;
+            font-size: 0.9em;
+        }
+
+        #colorMessage {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Form Events in JavaScript</h2>
+
+    <!-- onchange() Event -->
+    <h3>1. onchange() Event</h3>
+    <div>
+        <label for="selectColor">Choose a color:</label>
+        <select id="selectColor" onchange="colorChanged()">
+            <option value="" disabled selected>Select</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+    </div>
+    <div id="colorMessage"></div>
+
+    <!-- onfocus Event Example -->
+    <h3>onfocus Event Example</h3>
+    <p>Click inside the input field to see the effect:</p>
+    <input type="text" id="myInput" placeholder="Type something..." onfocus="highlightInput()">
+
+    <!-- onblur Event Example -->
+    <h3>Simple onblur Example</h3>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" onblur="checkName()" />
+        <p id="message" style="color: red;"></p>
+    </form>
+
+    <!-- Form to capture username -->
+    <form id="myForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <button type="button" onclick="getValue(this)">Submit</button>
+    </form>
+
+    <script>
+        function highlightInput() {
+            console.log('Input field is focused!');
+        }
+
+        // onchange event handler
+        function colorChanged() {
+            const selectElement = document.getElementById("selectColor");
+            const selectedValue = selectElement.value;
+            const messageDiv = document.getElementById("colorMessage");
+
+            if (selectedValue) {
+                messageDiv.textContent = `You selected: ${selectedValue}`;
+                messageDiv.style.color = selectedValue;
+            } else {
+                messageDiv.textContent = "Please select a color.";
+                messageDiv.style.color = "black";
+            }
+        }
+
+        function checkName() {
+            const nameField = document.getElementById("name");
+            const message = document.getElementById("message");
+
+            if (nameField.value === "") {
+                message.textContent = "Name cannot be empty.";
+            } else {
+                message.textContent = "";
+            }
+        }
+
+        function getValue(button) {
+            // Get the value of the input field (username)
+            var username = document.getElementById("username").value;
+
+            // Log the username
+            console.log("Username: " + username);
+
+            // Set a custom attribute using setAttribute()
+            button.setAttribute("data-username", username);
+
+            // Log the attribute
+            console.log(button.getAttribute("data-username"));
+        }
+    </script>
+</body>
+
+</html>
