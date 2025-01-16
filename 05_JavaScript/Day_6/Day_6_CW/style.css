@@ -1,0 +1,25 @@
+/* click event css */
+
+#onclickEvent {
+    margin: 30px;
+    padding: 20px 25px;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+
+/* click event css */
+
+#Click2,
+#Click3,
+#Click4,
+#Click5,
+#Click6,
+#Click7 {
+    margin: 30px;
+    padding: 20px 25px;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 20px;
+}

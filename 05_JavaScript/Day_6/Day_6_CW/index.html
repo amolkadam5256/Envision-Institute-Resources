@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Class work</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2> Mouse Events in JavaScript</h2>
+    <h3> 1. onclick() event </h3>
+
+    <div>Click the button to add magic ✨</div>
+    <div id="onclickEvent" onclick="clickMe()">Click Me 1</div>
+
+    <h3> 2. Click() event </h3>
+
+    <div>Click the button to add magic ✨</div>
+    <div id="Click2" onclick="clickMe2()">Click Me 2</div>
+
+    <h3> 3. double click dblclick() event </h3>
+
+    <div>Click double to button to show magic ✨</div>
+    <div id="Click3" ondblclick="doubleClickMe()">Double click Me 3</div>
+
+    <h3> 4. mousedown mousedown() event </h3>
+
+    <div>mousedown works when user clicks or drags the button ✨</div>
+    <div id="Click4" onmousedown="mouseDownMe()">click Me 4</div>
+
+    <h3> 5. mouseup mouseup() event </h3>
+
+    <div>mouseup works when the user releases the button after clicking or dragging ✨</div>
+    <div id="Click5" onmouseup="mouseUpMe()">click Me 5</div>
+
+    <h3> 6. mousemove mousemove() event </h3>
+    <div>mousemove triggers when the mouse is moved over the button ✨</div>
+    <div id="Click6" onmousemove="mouseMoveMe()">click Me 6</div>
+
+    <h3> 7. mouseover mouseover() event </h3>
+    <div>mouseover triggers when the mouse is hovered over the button ✨</div>
+    <div id="Click7" onmouseover="mouseOverMe()">click Me 7</div>
+
+
+    <script>
+        // onclick event
+        function clickMe() {
+            let x = document.getElementById("onclickEvent");
+            x.style.width = "200px";
+            x.style.height = "200px";
+            x.style.margin = "auto";
+            x.style.display = "block";
+            x.style.textAlign = "center";
+            x.style.verticalAlign = "center";
+            x.style.backgroundColor = "pink";
+            x.style.boxShadow = "5px 5px 20px red";
+            x.style.borderRadius = "50px";
+            x.style.transition = "5s";
+            x.style.fontSize = "50px";
+            x.style.paddingTop = "50px";
+        }
+
+        // second click event
+        function clickMe2() {
+            let x = document.getElementById("Click2");
+            x.style.backgroundColor = "red";
+            x.style.color = "white";
+            x.style.width = "200px";
+            x.style.height = "200px";
+            x.style.margin = "auto";
+            x.style.display = "block";
+            x.style.textAlign = "center";
+            x.style.verticalAlign = "center";
+            x.style.backgroundColor = "pink";
+            x.style.boxShadow = "5px 5px 20px red";
+            x.style.borderRadius = "50px";
+            x.style.transition = "5s";
+            x.style.fontSize = "50px";
+            x.style.paddingTop = "50px";
+        }
+
+        // double click event
+        function doubleClickMe() {
+            let y = document.getElementById("Click3");
+            y.style.backgroundColor = "yellow";
+            y.style.color = "white";
+            y.style.width = "200px";
+            y.style.height = "200px";
+            y.style.margin = "auto";
+            y.style.display = "block";
+            y.style.textAlign = "center";
+            y.style.verticalAlign = "center";
+            y.style.backgroundColor = "pink";
+            y.style.boxShadow = "5px 5px 20px red";
+            y.style.borderRadius = "50px";
+            y.style.transition = "5s";
+            y.style.fontSize = "50px";
+            y.style.paddingTop = "50px";
+        }
+
+        // mousedown event
+        function mouseDownMe() {
+            let z = document.getElementById("Click4");
+            z.textContent = "Text changed";
+            z.style.color = "white";
+            z.style.width = "200px";
+            z.style.height = "200px";
+            z.style.margin = "auto";
+            z.style.display = "block";
+            z.style.textAlign = "center";
+            z.style.verticalAlign = "center";
+            z.style.backgroundColor = "pink";
+            z.style.boxShadow = "5px 5px 20px red";
+            z.style.borderRadius = "50px";
+            z.style.transition = "5s";
+            z.style.fontSize = "50px";
+            z.style.paddingTop = "50px";
+        }
+
+        // mouseup event
+        function mouseUpMe() {
+            let z1 = document.getElementById("Click5");
+            z1.textContent = "released button";
+            z1.style.color = "white";
+            z1.style.width = "200px";
+            z1.style.height = "200px";
+            z1.style.margin = "auto";
+            z1.style.display = "block";
+            z1.style.textAlign = "center";
+            z1.style.verticalAlign = "center";
+            z1.style.backgroundColor = "pink";
+            z1.style.boxShadow = "5px 5px 20px red";
+            z1.style.borderRadius = "50px";
+            z1.style.transition = "5s";
+            z1.style.fontSize = "50px";
+            z1.style.paddingTop = "50px";
+        }
+
+        // mousemove event
+        function mouseMoveMe() {
+            let z2 = document.getElementById("Click6");
+            z2.textContent = "released button";
+            z2.style.color = "white";
+            z2.style.width = "200px";
+            z2.style.height = "200px";
+            z2.style.margin = "auto";
+            z2.style.display = "block";
+            z2.style.textAlign = "center";
+            z2.style.verticalAlign = "center";
+            z2.style.backgroundColor = "pink";
+            z2.style.boxShadow = "5px 5px 20px red";
+            z2.style.borderRadius = "50px";
+            z2.style.transition = "5s";
+            z2.style.fontSize = "50px";
+            z2.style.paddingTop = "50px";
+        }
+
+        // mouseover event
+        function mouseOverMe() {
+            let z3 = document.getElementById("Click7");
+            z3.textContent = "released button";
+            z3.style.color = "white";
+            z3.style.width = "200px";
+            z3.style.height = "200px";
+            z3.style.margin = "auto";
+            z3.style.display = "block";
+            z3.style.textAlign = "center";
+            z3.style.verticalAlign = "center";
+            z3.style.backgroundColor = "pink";
+            z3.style.boxShadow = "5px 5px 20px red";
+            z3.style.borderRadius = "50px";
+            z3.style.transition = "5s";
+            z3.style.fontSize = "50px";
+            z3.style.paddingTop = "50px";
+        }
+    </script>
+</body>
+
+</html>
