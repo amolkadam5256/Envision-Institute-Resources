@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Multiple Tasks on One Page</title>
+</head>
+
+<body>
+    <h1>JavaScript Tasks</h1>
+
+    <h2>1. Print Your Name Using innerHTML</h2>
+    <span id="name"></span>
+
+    <h2>2. Print Name, Age, Address, Gender Using innerText</h2>
+    <p id="namePara"></p>
+    <p id="agePara"></p>
+    <p id="addressPara"></p>
+    <p id="genderPara"></p>
+
+    <h2>3. Print the Webpage</h2>
+    <button onclick="window.print()">Print Page</button>
+
+    <h2>4. Redirect to a Bootstrap Page</h2>
+    <button onclick="redirect()">Go to Bootstrap Page</button>
+
+    <script>
+        document.getElementById("name").innerHTML = "Amol Kadam";
+        document.getElementById("namePara").innerText = "Name: Amol Kadam";
+        document.getElementById("agePara").innerText = "Age: 25";
+        document.getElementById("addressPara").innerText = "Address: Pune, Maharashtra, India";
+        document.getElementById("genderPara").innerText = "Gender: Male";
+
+        function redirect() {
+            window.location.href = "https://amolkadam5256.github.io/bootstrap-page";
+        }
+    </script>
+</body>
+
+</html>
