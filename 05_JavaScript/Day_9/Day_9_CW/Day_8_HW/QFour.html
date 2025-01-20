@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squares and Cubes of Array Elements</title>
+</head>
+
+<body>
+    <div>
+        <h2>Original  Array:</h2>
+        <p id="originalArray"></p>
+
+        <h2>Squares Arra y:</h2>
+        <p id="squaresArray"></p>
+
+        <h2>Cubes Arr ay:</h2>
+        <p id="cubesArray"></p>
+    </div>
+
+    <script>
+        {
+            function calculateSquaresAndCubes(array) {
+                let squares = [];
+                let cubes = [];
+
+                for (let i = 0; i < array.length; i++) {
+                    squares.push(array[i] ** 2); 
+                    cubes.push(array[i] ** 3); 
+                }
+
+                return { squares, cubes };
+            }
+
+            let size = parseInt(prompt("Enter the number of elements in the array:"));
+            let array = [];
+
+            for (let i = 0; i < size; i++) {
+                let element = parseInt(prompt(`Enter element ${i + 1}:`));
+                array.push(element);
+            }
+
+            let { squares, cubes } = calculateSquaresAndCubes(array);
+
+            document.getElementById("originalArray").innerText = `Original Array: ${array.join(", ")}`;
+            document.getElementById("squaresArray").innerText = `Squares Array: ${squares.join(", ")}`;
+            document.getElementById("cubesArray").innerText = `Cubes Array: ${cubes.join(", ")}`;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Element in Array</title>
+</head>
+
+<body>
+    <div>
+        <h2>Array Elements:</h2>
+        <p id="arrayElements"></p>
+
+        <h2>Search Result:</h2>
+        <p id="searchResult"></p>
+    </div>
+
+    <script>
+        {
+            // Function to search for an element in an array
+            function searchElement(array, elementToSearch) {
+                for (let i = 0; i < array.length; i++) {
+                    if (array[i] === elementToSearch) {
+                        return i; // Return index if element is found
+                    }
+                }
+                return -1; // Return -1 if element is not found
+            }
+
+            // Input size of the array
+            let size = parseInt(prompt("Enter the number of elements in the array:"));
+            let array = [];
+
+            // Get elements for the array
+            for (let i = 0; i < size; i++) {
+                let element = parseInt(prompt(`Enter element ${i + 1}:`));
+                array.push(element);
+            }
+
+            // Display the array
+            document.getElementById("arrayElements").innerText = `Array: ${array.join(", ")}`;
+
+            // Input the element to search
+            let elementToSearch = parseInt(prompt("Enter the element you want to search:"));
+
+            // Search for the element
+            let position = searchElement(array, elementToSearch);
+
+            // Display the result
+            if (position !== -1) {
+                document.getElementById("searchResult").innerText = `Element ${elementToSearch} is found at position ${position + 1} (index ${position}).`;
+            } else {
+                document.getElementById("searchResult").innerText = `Element ${elementToSearch} is not found in the array.`;
+            }
+        }
+    </script>
+</body>
+
+</html>
