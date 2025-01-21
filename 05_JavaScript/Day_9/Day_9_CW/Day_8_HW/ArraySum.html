@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day_8 CW</title>
+</head>
+
+<body>
+    <div>
+        <h2>Array Elements:</h2>
+        <p id="arrayElement"></p>
+        <h2>Sum of Array:</h2>
+        <p id="arraySum"></p>
+    </div>
+
+    <script>
+        {
+            // Function to calculate the sum of an array
+            function calculateSum(array) {
+                let sum = 0;
+                for (let i = 0; i < array.length; i++) {
+                    sum += array[i];
+                }
+                return sum;
+            }
+
+            // Prompt user for array size
+            let size = parseInt(prompt("Enter the number of elements in the array:"));
+            let array = [];
+            let elementsText = "";
+
+            // Get elements from the user and display them
+            for (let i = 0; i < size; i++) {
+                let element = parseInt(prompt(`Enter element ${i + 1}:`));
+                array.push(element);
+                elementsText += `${element} `; // Append elements to display
+            }
+
+            // Display all elements
+            document.getElementById("arrayElement").innerText = elementsText.trim();
+
+            // Calculate and display the sum
+            let sum = calculateSum(array);
+            document.getElementById("arraySum").innerText = `The sum of the array elements is: ${sum}`;
+
+            // Alert the sum
+            alert("The sum of the array elements is: " + sum);
+        }
+    </script>
+</body>
+
+</html>

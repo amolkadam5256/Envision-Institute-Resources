@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average of Array Elements</title>
+</head>
+
+<body>
+    <div>
+        <h2>Array Elements:</h2>
+        <p id="arrayElements"></p>
+
+        <h2>Average Value:</h2>
+        <p id="averageValue"></p>
+    </div>
+
+    <script>
+        {
+            function calculateAverage(array) {
+                let sum = 0;
+
+                for (let i = 0; i < array.length; i++) {
+                    sum += array[i]; 
+                }
+
+                return sum / array.length; 
+            }
+
+            let size = parseInt(prompt("Enter the number of elements in the array:"));
+            let array = [];
+
+            for (let i = 0; i < size; i++) {
+                let element = parseInt(prompt(`Enter element ${i + 1}:`));
+                array.push(element);
+            }
+
+            let average = calculateAverage(array);
+
+            document.getElementById("arrayElements").innerText = `Array: ${array.join(", ")}`;
+            document.getElementById("averageValue").innerText = `Average Value: ${average.toFixed(2)}`;
+        }
+    </script>
+</body>
+
+</html>
