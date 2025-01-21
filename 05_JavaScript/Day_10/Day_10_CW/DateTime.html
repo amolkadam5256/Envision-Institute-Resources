@@ -4,22 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 10 </title>
+    <title>Day 10 - Date Functions</title>
 </head>
 
 <body>
 
     <h1>Date Function</h1>
 
-
     <script>
-
         const currentDate = new Date();
-        document.write(currentDate);
-        document.write(dateFromMillis);
-        document.write(dateFromString);
 
+        // Current date
+        document.write("<p><strong>Current Date:</strong> " + currentDate + "</p>");
+        
+        // Year
+        document.write("<p><strong>Year:</strong> " + currentDate.getFullYear() + "</p>");
+
+        // Month
+        document.write("<p><strong>Month (0-11):</strong> " + currentDate.getMonth() + "</p>");
+
+        // Day of the month
+        document.write("<p><strong>Day of the Month (1-31):</strong> " + currentDate.getDate() + "</p>");
+
+        // Day of the week
+        document.write("<p><strong>Day of the Week (0-6):</strong> " + currentDate.getDay() + "</p>");
+
+        // Hours
+        document.write("<p><strong>Hours (0-23):</strong> " + currentDate.getHours() + "</p>");
+
+        // Minutes
+        document.write("<p><strong>Minutes (0-59):</strong> " + currentDate.getMinutes() + "</p>");
+
+        // Seconds
+        document.write("<p><strong>Seconds (0-59):</strong> " + currentDate.getSeconds() + "</p>");
+
+        // Milliseconds
+        document.write("<p><strong>Milliseconds (0-999):</strong> " + currentDate.getMilliseconds() + "</p>");
+
+        // Time in milliseconds
+        document.write("<p><strong>Time in Milliseconds:</strong> " + currentDate.getTime() + "</p>");
+
+        // UTC Year
+        document.write("<p><strong>UTC Year:</strong> " + currentDate.getUTCFullYear() + "</p>");
+
+        // UTC Month
+        document.write("<p><strong>UTC Month:</strong> " + currentDate.getUTCMonth() + "</p>");
+
+        // UTC Day of the month
+        document.write("<p><strong>UTC Day of the Month:</strong> " + currentDate.getUTCDate() + "</p>");
+
+        // UTC Day of the week
+        document.write("<p><strong>UTC Day of the Week:</strong> " + currentDate.getUTCDay() + "</p>");
+
+        // UTC Hours
+        document.write("<p><strong>UTC Hours:</strong> " + currentDate.getUTCHours() + "</p>");
+
+        // UTC Minutes
+        document.write("<p><strong>UTC Minutes:</strong> " + currentDate.getUTCMinutes() + "</p>");
+
+        // UTC Seconds
+        document.write("<p><strong>UTC Seconds:</strong> " + currentDate.getUTCSeconds() + "</p>");
+
+        // UTC Milliseconds
+        document.write("<p><strong>UTC Milliseconds:</strong> " + currentDate.getUTCMilliseconds() + "</p>");
+
+        // Readable date
+        document.write("<p><strong>Readable Date:</strong> " + currentDate.toString() + "</p>");
+
+        // Local date string
+        document.write("<p><strong>Local Date (Locale):</strong> " + currentDate.toLocaleDateString() + "</p>");
+
+        // Local time string
+        document.write("<p><strong>Local Time (Locale):</strong> " + currentDate.toLocaleTimeString() + "</p>");
+
+        // ISO date format
+        document.write("<p><strong>ISO Date Format:</strong> " + currentDate.toISOString() + "</p>");
+
+        // UTC date string
+        document.write("<p><strong>UTC Date String:</strong> " + currentDate.toUTCString() + "</p>");
+
+        // Day of the year
+        const start = new Date(currentDate.getFullYear(), 0, 0);
+        const diff = currentDate - start;
+        const oneDay = 1000 * 60 * 60 * 24;
+        const dayOfYear = Math.floor(diff / oneDay);
+        document.write("<p><strong>Day of the Year:</strong> " + dayOfYear + "</p>");
+
+        // Custom date (2023-12-25)
+        const customDate = new Date();
+        customDate.setFullYear(2023, 11, 25); // December 25, 2023
+        document.write("<p><strong>Custom Date (2023-12-25):</strong> " + customDate + "</p>");
     </script>
+
 </body>
 
 </html>

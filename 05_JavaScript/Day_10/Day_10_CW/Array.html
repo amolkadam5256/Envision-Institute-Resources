@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - Array Functions</title>
+</head>
+
+<body>
+
+    <h1>Array Function</h1>
+
+    <script>
+        const array = [5, 10, 15, 20, 25];
+
+        // Original array
+        document.write("<p><strong>Original Array:</strong> " + array + "</p>");
+
+        // Length of the array
+        document.write("<p><strong>Length of Array:</strong> " + array.length + "</p>");
+
+        // Add element at the end of the array
+        array.push(30);
+        document.write("<p><strong>Array after push (30):</strong> " + array + "</p>");
+
+        // Remove the last element of the array
+        array.pop();
+        document.write("<p><strong>Array after pop:</strong> " + array + "</p>");
+
+        // Add element at the beginning of the array
+        array.unshift(0);
+        document.write("<p><strong>Array after unshift (0):</strong> " + array + "</p>");
+
+        // Remove the first element of the array
+        array.shift();
+        document.write("<p><strong>Array after shift:</strong> " + array + "</p>");
+
+        // Find index of a specific element
+        document.write("<p><strong>Index of 15:</strong> " + array.indexOf(15) + "</p>");
+
+        // Check if an element exists in the array
+        document.write("<p><strong>Includes 20?</strong> " + array.includes(20) + "</p>");
+
+        // Join array elements into a string
+        document.write("<p><strong>Array joined by '-':</strong> " + array.join("-") + "</p>");
+
+        // Slice a part of the array
+        document.write("<p><strong>Array Slice (Index 1 to 3):</strong> " + array.slice(1, 3) + "</p>");
+
+        // Splice the array (removing and adding elements)
+        array.splice(1, 2, 50, 60);
+        document.write("<p><strong>Array after splice (Index 1, remove 2, add 50 and 60):</strong> " + array + "</p>");
+
+        // Reverse the array
+        array.reverse();
+        document.write("<p><strong>Reversed Array:</strong> " + array + "</p>");
+
+        // Sort the array
+        array.sort((a, b) => a - b);
+        document.write("<p><strong>Sorted Array (Ascending):</strong> " + array + "</p>");
+
+        // Create a new array with each element squared
+        const squaredArray = array.map(num => num * num);
+        document.write("<p><strong>Squared Array:</strong> " + squaredArray + "</p>");
+
+        // Filter elements greater than 20
+        const filteredArray = array.filter(num => num > 20);
+        document.write("<p><strong>Filtered Array (Elements > 20):</strong> " + filteredArray + "</p>");
+
+        // Reduce the array to a single value (sum of elements)
+        const sum = array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        document.write("<p><strong>Sum of Array Elements:</strong> " + sum + "</p>");
+    </script>
+
+</body>
+
+</html>
+

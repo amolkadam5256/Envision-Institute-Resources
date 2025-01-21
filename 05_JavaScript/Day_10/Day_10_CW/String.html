@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - string Functions</title>
+</head>
+
+<body>
+
+    <h1>string Function</h1>
+
+    <script>
+        const name = "   Amol Tukaram Kadam   ";
+
+        // Original text
+        document.write("<p><strong>Original Name:</strong> " + name + "</p>");
+        
+        // Length of the name
+        document.write("<p><strong>Length of Name:</strong> " + name.length + "</p>");
+
+        // Trim the name (remove whitespace from both ends)
+        document.write("<p><strong>Trimmed Name:</strong> " + name.trim() + "</p>");
+
+        // Convert name to uppercase
+        document.write("<p><strong>Uppercase Name:</strong> " + name.toUpperCase() + "</p>");
+
+        // Convert name to lowercase
+        document.write("<p><strong>Lowercase Name:</strong> " + name.toLowerCase() + "</p>");
+
+        // Replace part of the name
+        document.write("<p><strong>Replaced Name:</strong> " + name.replace("Kadam", "Patil") + "</p>");
+
+        // Extract a part of the name
+        document.write("<p><strong>Extracted Name (Index 0 to 4):</strong> " + name.substring(0, 4) + "</p>");
+
+        // Extract part of the name (from index 6)
+        document.write("<p><strong>Extracted Name (From Index 6):</strong> " + name.slice(6) + "</p>");
+
+        // Get index of a substring
+        document.write("<p><strong>Index of 'Tukaram':</strong> " + name.indexOf("Tukaram") + "</p>");
+
+        // Check if a name includes a word
+        document.write("<p><strong>Includes 'Amol'?</strong> " + name.includes("Amol") + "</p>");
+
+        // Split name into an array (by space)
+        document.write("<p><strong>Name Split by Space:</strong> " + name.split(" ") + "</p>");
+
+        // Repeat the name
+        document.write("<p><strong>Name Repeated (3 times):</strong> " + name.repeat(3) + "</p>");
+
+        // Character at a specific index
+        document.write("<p><strong>Character at Index 5:</strong> " + name.charAt(5) + "</p>");
+
+        // Convert name to a JSON-safe string
+        document.write("<p><strong>JSON Stringified Name:</strong> " + JSON.stringify(name) + "</p>");
+    </script>
+
+</body>
+
+</html>
