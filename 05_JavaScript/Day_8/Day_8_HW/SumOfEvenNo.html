@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Even Numbers in Array</title>
+</head>
+
+<body>
+    <div>
+        <h2>Array Elements:</h2>
+        <p id="arrayElements"></p>
+
+        <h2>Sum of Even Numbers:</h2>
+        <p id="evenSum"></p>
+    </div>
+
+    <script>
+        {
+            // Function to calculate the sum of even numbers in the array
+            function sumEvenNumbers(array) {
+                let sum = 0;
+
+                for (let i = 0; i < array.length; i++) {
+                    if (array[i] % 2 === 0) { // Check if the number is even
+                        sum += array[i]; // Add to sum if even
+                    }
+                }
+
+                return sum;
+            }
+
+            // Input size of the array
+            let size = parseInt(prompt("Enter the number of elements in the array:"));
+            let array = [];
+
+            // Get elements for the array
+            for (let i = 0; i < size; i++) {
+                let element = parseInt(prompt(`Enter element ${i + 1}:`));
+                array.push(element);
+            }
+
+            // Calculate the sum of even numbers
+            let evenSum = sumEvenNumbers(array);
+
+            // Display the array and the sum of even numbers
+            document.getElementById("arrayElements").innerText = `Array: ${array.join(", ")}`;
+            document.getElementById("evenSum").innerText = `Sum of Even Numbers: ${evenSum}`;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of Two Arrays</title>
+</head>
+
+<body>
+    <div>
+        <h2>First Array:</h2>
+        <p id="firstArray"></p>
+
+        <h2>Second Array:</h2>
+        <p id="secondArray"></p>
+
+        <h2>Sum of Arrays (Third Array):</h2>
+        <p id="thirdArray"></p>
+    </div>
+
+    <script>
+        {
+            function addArrays(array1, array2) {
+                let resultArray = [];
+                for (let i = 0; i < array1.length; i++) {
+                    resultArray.push(array1[i] + array2[i]);
+                }
+                return resultArray;
+            }
+
+            let size = parseInt(prompt("Enter the size of the arrays:"));
+
+            let array1 = [];
+            let array2 = [];
+
+            for (let i = 0; i < size; i++) {
+                let element = parseInt(prompt(`Enter element ${i + 1} for the first array:`));
+                array1.push(element);
+            }
+
+            for (let i = 0; i < size; i++) {
+                let element = parseInt(prompt(`Enter element ${i + 1} for the second array:`));
+                array2.push(element);
+            }
+
+            let array3 = addArrays(array1, array2);
+
+            document.getElementById("firstArray").innerText = `Array 1: ${array1.join(", ")}`;
+            document.getElementById("secondArray").innerText = `Array 2: ${array2.join(", ")}`;
+            document.getElementById("thirdArray").innerText = `Array 3 (Sum): ${array3.join(", ")}`;
+        }
+    </script>
+</body>
+
+</html>
