@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 Pattern </title>
+</head>
+
+<body>
+
+    <h1>Pattern all</h1>
+    <p>Square pattern 6 </p>
+    <p onclick="Pattern1()">Click Me</p>
+
+    <br><br>
+
+    <p>Square pattern 3 </p>
+    <p onclick="Pattern2()">Click Me</p>
+
+    <br><br>
+
+    <p>Square pattern 2 </p>
+    <p onclick="Pattern3()">Click Me</p>
+
+    <br><br>
+
+    <p>Square pattern 1 </p>
+    <p onclick="Pattern4()">Click Me</p>
+    <br><br>
+
+    <p>Square pattern 5 </p>
+    <p onclick="Pattern5()">Click Me</p>
+    <br><br>
+
+    <p>Square pattern 4 </p>
+    <p onclick="Pattern6()">Click Me</p>
+
+    <br><br>
+    <script>
+
+        function Pattern1() {
+            let n = parseInt(prompt("Enter Number of Row"));
+            document.write(`<br><br><br><br>`);
+
+            for (let i = 1; i <= n; i++) {
+                for (let k = i; k <= n; k++) {
+                    document.write("&nbsp &nbsp");
+                }
+                for (let j = 1; j <= n; j++) {
+
+                    document.write(" * ");
+                }
+                document.write(`<br>`);
+            }
+        }
+
+        function Pattern2() {
+            let n = parseInt(prompt("Enter Number of Row"));
+            document.write(`<br><br><br><br>`);
+            for (let i = 1; i <= n; i++) {
+                for (let k = i; k <= n; k++) {
+                    document.write("&nbsp &nbsp");
+                }
+                for (let j = 1; j <= n; j++) {
+                    if (i == 1 || i == n || j == 1 || j == n) {
+                        document.write(" * ");
+                    }
+                    else {
+                        document.write("&nbsp &nbsp");
+                    }
+                }
+                document.write(`<br>`);
+            }
+        }
+
+        function Pattern3() {
+            let n = parseInt(prompt("Enter Number of Row"));
+            document.write(`<br><br><br><br>`);
+            for (let i = 1; i <= n; i++) {
+                for (let k = i; k <= n; k++) {
+                    document.write(" 0 ");
+
+                }
+                for (let j = 1; j <= i; j++) {
+                    // document.write(" n ");
+                }
+
+                document.write(`<br>`);
+            }
+        }
+
+        function Pattern4() {
+            let n = parseInt(prompt("Enter Number of Row"));
+            document.write(`<br><br><br><br>`);
+            for (let i = 1; i <= n; i++) {
+                for (let k = i; k <= n; k++) {
+                    if (i == 1 || i == n || k == i || k == n) {
+                        document.write(" 0 ");
+                    }
+                    else {
+                        document.write("&nbsp &nbsp");
+                    }
+                }
+
+                document.write(`<br>`);
+            }
+        }
+
+        function Pattern5() {
+            let n = parseInt(prompt("Enter Number of Row"));
+            document.write(`<br><br><br><br>`);
+            for (let i = 1; i <= n; i++) {
+                for (let k = 1; k <= i; k++) {
+                    document.write("&nbsp");
+
+                }
+                for (let k = i; k <= n; k++) {
+                    if (i == 1 || i == n || k == i || k == n) {
+                        document.write(" 0 ");
+                    }
+                    else {
+                        document.write("&nbsp &nbsp");
+                    }
+                }
+
+                document.write(`<br>`);
+            }
+        }
+
+        function Pattern6() {
+            let n = parseInt(prompt("Enter Number of Row"));
+            document.write(`<br><br><br><br>`);
+            for (let i = 1; i <= n; i++) {
+                for (let k = 1; k <= i; k++) {
+                    document.write("&nbsp");
+
+                }
+                for (let k = i; k <= n; k++) {
+                        document.write(" 0 ");
+                }
+
+                document.write(`<br>`);
+            }
+        }
+    </script>
+</body>
+
+</html>
