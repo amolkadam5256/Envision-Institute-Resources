@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Selectors & Window Methods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .btn {
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .log {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-title">JavaScript Selectors & Methods</h1>
+
+    <p class="highlight">This is a highlighted paragraph using a class.</p>
+    <p>This is a normal paragraph without special styling.</p>
+
+    <div class="card highlight">
+        <p>Inside a card with the 'highlight' class.</p>
+        <span id="special-span">This is a special span element.</span>
+    </div>
+
+    <button class="btn" id="change-title">Change Title Color</button>
+    <button class="btn" id="highlight-btn">Highlight All Paragraphs</button>
+    <button class="btn" id="alert-btn">Click for Alert</button>
+
+    <div id="log-container">
+        <h3>Log Messages:</h3>
+        <div id="log"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const logContainer = document.querySelector("#log");
+
+            // Function to log messages
+            function logMessage(message) {
+                const p = document.createElement("p");
+                p.className = "log";
+                p.textContent = message;
+                logContainer.appendChild(p);
+            }
+
+            // Selectors and DOM Manipulation
+            const mainTitle = document.querySelector("#main-title");
+            mainTitle.style.color = "blue"; // Change title color initially
+            logMessage("Main title color changed to blue on page load.");
+
+            // getElementsByClassName
+            const highlightedElements = document.getElementsByClassName("highlight");
+            logMessage(`Found ${highlightedElements.length} elements with 'highlight' class.`);
+            for (const element of highlightedElements) {
+                element.style.border = "2px solid green";
+            }
+
+            // getElementsByTagName
+            const paragraphs = document.getElementsByTagName("p");
+            logMessage(`Found ${paragraphs.length} <p> elements on the page.`);
+
+            // Event Listeners
+            const changeTitleButton = document.querySelector("#change-title");
+            changeTitleButton.addEventListener("click", () => {
+                mainTitle.style.color = mainTitle.style.color === "red" ? "blue" : "red";
+                logMessage("Title color toggled between red and blue.");
+            });
+
+            const highlightButton = document.querySelector("#highlight-btn");
+            highlightButton.addEventListener("click", () => {
+                for (const paragraph of paragraphs) {
+                    paragraph.style.backgroundColor = "#f0f8ff";
+                }
+                logMessage("All paragraphs highlighted with light blue.");
+            });
+
+            const alertButton = document.querySelector("#alert-btn");
+            alertButton.addEventListener("click", () => {
+                alert("Hello! You clicked the alert button.");
+                logMessage("Alert button clicked.");
+            });
+
+            // Window Methods
+            setTimeout(() => {
+                logMessage("This message appeared after 3 seconds.");
+            }, 3000);
+
+            let counter = 0;
+            const intervalId = setInterval(() => {
+                counter++;
+                logMessage(`Interval message ${counter}`);
+                if (counter === 5) {
+                    clearInterval(intervalId);
+                    logMessage("Interval cleared after 5 counts.");
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
