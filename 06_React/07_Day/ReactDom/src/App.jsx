@@ -1,16 +1,23 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Comp/Home";
+import About from "./Comp/About";
+import Navbar from "./Comp/Navbar";
+import Projects from "./Comp/Projects";
+import Contact from "./Comp/Contact";
 
 const App = () => {
   return (
-    <>
-      <div>
-        <h1>React React-Dom</h1>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
+};
 
-        
-
-      </div>
-    </>
-  )
-}
-
-export default App
+export default App;
