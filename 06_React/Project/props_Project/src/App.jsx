@@ -14,7 +14,7 @@ const App = () => {
     { label: "Tours", href: "#" },
     { label: "Videos", href: "#" },
     { label: "Pages", href: "#" },
-    { label: "Contact", href: "#" }
+    { label: "Contact", href: "#" },
   ];
 
   return (
