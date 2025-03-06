@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day One of jQuery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            alert("Welcome to the Home Page!");
+
+            // Universal Selector
+            $("*").css({
+                "box-sizing": "border-box",
+                "font-family": "Arial, sans-serif"
+            });
+
+            // Basic Selectors
+            $("h1").css({
+                "color": "blue",
+                "font-size": "36px",
+                "text-transform": "uppercase"
+            });
+            
+            $(".navbar").css({
+                "background-color": "#333",
+                "padding": "10px",
+                "border-radius": "8px",
+                "display": "flex",
+                "justify-content": "center"
+            });
+            
+            $(".navbar a").css({
+                "color": "white",
+                "margin": "10px",
+                "font-size": "18px",
+                "text-decoration": "none",
+                "padding": "10px 20px",
+                "transition": "all 0.3s ease"
+            });
+            
+            $(".container").css({
+                "text-align": "center",
+                "padding": "20px",
+                "background-color": "#f9f9f9",
+                "max-width": "800px",
+                "margin": "auto"
+            });
+
+            // Attribute Selectors
+            $("img[alt='DemoImg']").css({
+                "border": "5px solid blue",
+                "width": "200px",
+                "border-radius": "10px"
+            });
+            
+            $("a[href='#']").css({
+                "font-weight": "bold",
+                "text-decoration": "underline"
+            });
+
+            // Hierarchy Selectors
+            $(".container > p").css({
+                "font-size": "18px",
+                "color": "#555",
+                "line-height": "1.6"
+            });
+            
+            $(".container p:first").css({"color": "green", "font-weight": "bold"});
+            $(".container p:last").css({"color": "red", "font-style": "italic"});
+
+            // Form Selectors
+            $(":input").css({
+                "border": "2px solid black",
+                "padding": "5px",
+                "margin": "5px"
+            });
+
+            // Visibility Selectors
+            $("p:visible").css({"background-color": "#e0f7fa", "padding": "10px"});
+            $("p:hidden").show().css({"display": "block", "color": "purple"});
+
+            // Content Selectors
+            $("p:contains('jQuery')").css({"background-color": "#d1c4e9"});
+            $("div:has(img)").css({"border": "2px solid #ff9800"});
+
+            // Child Filters
+            $("p:first-child").css({"color": "brown"});
+            $("p:last-child").css({"text-decoration": "underline"});
+            
+            // Other Filters
+            $("p:even").css({"background-color": "#ffccbc"});
+            $("p:odd").css({"background-color": "#c8e6c9"});
+            $("p:not(.demo)").css({"border": "1px solid black"});
+            
+            $("div p").css({"background-color": "#000", "color": "white"});
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to Day 01 in jQuery</h1>
+        <p>This is a simple homepage to demonstrate the use of jQuery and basic web development.</p>
+        <p>jQuery makes it easier to manipulate elements, handle events, and create dynamic web pages.</p>
+        <p class="demo">Explore the navigation links to learn more about jQuery and how it enhances web development.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nam incidunt illum.</p>
+        
+        <img src="./index.html" alt="DemoImg" />
+        
+        <form>
+            <input type="text" placeholder="Enter text" />
+            <input type="password" placeholder="Password" />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>
