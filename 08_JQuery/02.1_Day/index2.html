@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day Three of jQuery</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      #divone {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        text-align: center;
+        padding: 20px;
+        display: none; /* Initially hidden */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>This example demonstrates the side effects</h1>
+
+    <button id="Slidedown">Slidedown</button>
+    <button id="slideup">slideup</button>
+    <button id="slideToggle">slideToggle</button>
+
+    <div id="divone">
+      <p>Demo Div for Effect</p>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        
+        $("#Slidedown").click(function () {
+          $("#divone").slideDown("slow");
+          $("#divone").text("Hello my name is slideDown"); 
+          
+        });
+        
+        
+        $("#slideup").click(function () {   
+            $("#divone").slideUp("slow");
+            $("#divone").text("Hello my name is slideUp"); 
+        });
+        
+        
+        $("#slideToggle").click(function () {   
+            $("#divone").slideToggle("slow");
+            $("#divone").text("Hello my name is slideToggle"); 
+        });
+
+
+      });
+    </script>
+  </body>
+</html>

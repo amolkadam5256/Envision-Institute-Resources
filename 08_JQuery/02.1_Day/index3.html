@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day Three of jQuery</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      #divone {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        text-align: center;
+        padding: 20px;
+        display: none; /* Initially hidden */
+        opacity: 0.5;
+        position: relative;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 100px;
+        margin: 10px;
+        display: inline-block;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>This example demonstrates animation effects</h1>
+
+    <button id="animation">Animate</button>
+
+    <div id="divone">
+      <p>Demo Div for Effect</p>
+    </div>
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br />
+
+    <h2>
+      The `on()` method is used to attach event handlers to elements, allowing
+      you to bind one or more events like `click`, `hover`, etc.
+    </h2>
+
+    <button id="Clickme">Click me</button>
+    <button id="HoverMe">Hover Over Me</button>
+
+    <div class="box" id="box1">box1</div>
+    <div class="box" id="box2">box2</div>
+
+    <script>
+      $(document).ready(function () {
+        $("#animation").click(function () {
+          $("#divone")
+            .fadeIn(500)
+            .animate(
+              {
+                width: "300px",
+                height: "250px",
+                opacity: 1,
+                marginLeft: "500px",
+              },
+              1000
+            )
+            .css("background-color", "#ffcccb")
+            .delay(500)
+            .animate(
+              {
+                width: "200px",
+                height: "100px",
+                opacity: 0.5,
+                marginLeft: "900px",
+              },
+              1000
+            )
+            .animate(
+              {
+                width: "300px",
+                height: "300px",
+                opacity: 1,
+                marginLeft: "0px",
+              },
+              1000
+            )
+            .css("background-color", "lightblue")
+            .fadeOut(500);
+        });
+
+        // Fixed: Added '#' for correct ID selector
+        $("#Clickme").on("click", function () {
+          alert("You clicked me!");
+          $(".box").css("background-color", "red");
+        });
+
+        // Added hover effect for demonstration
+        $("#HoverMe").hover(
+          function () {
+            $(this).css("background-color", "yellow");
+          },
+          function () {
+            $(this).css("background-color", "");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

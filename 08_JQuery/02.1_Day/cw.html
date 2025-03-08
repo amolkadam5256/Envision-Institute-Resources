@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Events Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #box { width: 100px; height: 100px; background: red; margin: 20px; transition: 0.3s; }
+        #input2, #input1 { display: block; margin: 10px 0; padding: 5px; width: 200px; }
+    </style>
+</head>
+<body>
+    <h3>Mouse Events</h3>
+    <button id="btn">Click Me</button>
+    <div id="box"></div>
+    <script>
+        $(document).ready(function() {
+            $('#btn').on('click', function() { alert('You clicked the button!'); });
+            $('#btn').on('dblclick', function() { alert('You double-clicked the button!'); });
+
+            $('#box').on('mouseenter', function() { 
+                $(this).css('background', 'blue'); 
+                console.log('Mouse entered the box');
+            });
+
+            $('#box').on('mouseleave', function() { 
+                $(this).css('background', 'red'); 
+                console.log('Mouse left the box');
+            });
+
+            $('#box').on('mousedown', function() { 
+                $(this).css('border', '3px solid black'); 
+                console.log('Mouse button pressed on the box');
+            });
+
+            $('#box').on('mouseup', function() { 
+                $(this).css('border', 'none'); 
+                console.log('Mouse button released on the box');
+            });
+        });
+    </script>
+
+    <h3>Keyboard Events</h3>
+    <input type="text" id="input1" placeholder="Type something...">
+    <script>
+        $(document).ready(function() {
+            $('#input1').on('keydown', function(event) { 
+                console.log(`Key Down: ${event.key}`); 
+            });
+
+            $('#input1').on('keyup', function(event) { 
+                console.log(`Key Up: ${event.key}`); 
+            });
+
+            $('#input1').on('keypress', function(event) { 
+                console.log(`Key Pressed: ${event.key}`); 
+            });
+        });
+    </script>
+
+    <h3>Form Events</h3>
+    <input type="text" id="input2" placeholder="Focus and blur">
+    <br>
+    <select id="dropdown">
+        <option value="">Select an option</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+    </select>
+    <form id="testForm">
+        <input type="text" name="name" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <script>
+        $(document).ready(function() {
+            $('#input2').on('focus', function() { 
+                $(this).css('background', 'lightgray'); 
+                console.log('Input field focused');
+            });
+
+            $('#input2').on('blur', function() { 
+                $(this).css('background', 'white'); 
+                console.log('Input field blurred');
+            });
+
+            $('#dropdown').on('change', function() {
+                console.log(`Dropdown changed to: ${$(this).val()}`);
+            });
+
+            $('#testForm').on('submit', function(event) {
+                event.preventDefault(); 
+                alert('Form submitted successfully!');
+            });
+        });
+    </script>
+</body>
+</html>

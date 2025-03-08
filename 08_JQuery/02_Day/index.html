@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2 pratic</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+
+    <style>
+        .para{
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <button class="click">Click Me</button>
+    <p class="para">
+     Div
+    </p>
+
+
+<input type="text" name="" class="inp1">
+<input type="text" name="" class="inp2">
+<input type="text" name="" class="inp3">
+
+
+    <script>
+      $(document).ready(function () {
+        // $(".click").click(function () {
+        //   alert("Hello");
+        // });
+
+        // $(".click").dblclick(function () {
+        //   alert("Hello dbClick");
+        //   $(".para").css({
+        //     "background-color": "red",
+        //   });
+
+        // });
+
+        // $(".para").hover(
+        //     function(){
+        //         $(this).css({
+        //          "background-color": "red",
+        //          "fontSize":"20px"
+
+        //         })
+        //     },
+        //     function(){
+        //         $(this).css({
+        //             "background-color": "blue",
+        //             "fontSize":"30px"
+        //         })
+        //     }
+        // );
+
+        // $(".para").mouseenter(function () {
+        //   $(this).css({
+        //     "background-color": "red",
+        //     fontSize: "20px",
+        //   });
+        // });
+
+        // $(".para").mouseleave(function () {
+        //   $(this).css({
+        //     "background-color": "blue",
+        //     fontSize: "30px",
+        //   });
+        // });
+
+
+        $(".inp1").keydown(function () {
+          $(this).css({
+            "background-color": "red",
+            fontSize: "30px",
+          });
+        });
+
+
+        $(".inp2").keypress(function () {
+          $(this).css({
+            "background-color": "blue",
+            fontSize: "30px",
+          });
+        });
+
+        $(".inp3").keyup(function () {
+            $(this).css({
+            "background-color": "green  ",
+            fontSize: "30px",
+          });
+        });
+
+
+
+      });
+    </script>
+  </body>
+</html>

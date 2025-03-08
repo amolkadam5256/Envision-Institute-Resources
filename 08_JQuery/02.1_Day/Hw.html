@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Effects Practice</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 10px auto;
+            line-height: 100px;
+            text-align: center;
+            background-color: lightblue;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Basic Effects</h2>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="toggleBtn">Toggle</button>
+    <div class="box" id="basicBox">Basic Effect Box</div>
+
+    <h2>Fading Effects</h2>
+    <button id="fadeInBtn">Fade In</button>
+    <button id="fadeOutBtn">Fade Out</button>
+    <button id="fadeToggleBtn">Fade Toggle</button>
+    <button id="fadeToBtn">Fade To (50%)</button>
+    <div class="box" id="fadeBox">Fading Effect Box</div>
+
+    <h2>Sliding Effects</h2>
+    <button id="slideDownBtn">Slide Down</button>
+    <button id="slideUpBtn">Slide Up</button>
+    <button id="slideToggleBtn">Slide Toggle</button>
+    <div class="box" id="slideBox">Sliding Effect Box</div>
+
+    <h2>Custom Animation</h2>
+    <button id="animateBtn">Animate</button>
+    <div class="box" id="animateBox">Animated Box</div>
+
+    <script>
+        $(document).ready(function() {
+            // Basic Effects
+            $("#hideBtn").click(function() {
+                $("#basicBox").hide();
+            });
+            $("#showBtn").click(function() {
+                $("#basicBox").show();
+            });
+            $("#toggleBtn").click(function() {
+                $("#basicBox").toggle();
+            });
+
+            // Fading Effects
+            $("#fadeInBtn").click(function() {
+                $("#fadeBox").fadeIn();
+            });
+            $("#fadeOutBtn").click(function() {
+                $("#fadeBox").fadeOut();
+            });
+            $("#fadeToggleBtn").click(function() {
+                $("#fadeBox").fadeToggle();
+            });
+            $("#fadeToBtn").click(function() {
+                $("#fadeBox").fadeTo(500, 0.5);
+            });
+
+            // Sliding Effects
+            $("#slideDownBtn").click(function() {
+                $("#slideBox").slideDown();
+            });
+            $("#slideUpBtn").click(function() {
+                $("#slideBox").slideUp();
+            });
+            $("#slideToggleBtn").click(function() {
+                $("#slideBox").slideToggle();
+            });
+
+            // Custom Animation
+            $("#animateBtn").click(function() {
+                $("#animateBox").animate({
+                    width: "300px",
+                    height: "150px",
+                    opacity: 0.5,
+                    marginLeft: "50px"
+                }, 1000);
+            });
+        });
+    </script>
+
+</body>
+</html>
