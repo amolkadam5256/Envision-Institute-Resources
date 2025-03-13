@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body id="body">
+    <h1>This is Example of Text set And Get in jquery</h1>
+    <p id="exampletext">This is Demo Text</p>
+    <input type="text" id="inputexample" value="Hello "/>
+    <a href="https://www.wikipedia.org/" id="examplelink">Visit Me</a>
+    <button id ="setText">Set Text</button>
+    <button id ="setHtml">Set Html</button>
+    <button id ="setText">Set Input</button>
+    <button id ="setAttribute">Set tAttribute</button>
+
+
+    
+
+
+    <script>
+        // Get Method
+        console.log($("#exampletext").text());
+         
+        // Set Method
+        $("#setText").click(function (){
+            $("#exampletext").text("New Text")
+        });
+
+        // Get Method for html
+        console.log($("#body").html());
+
+        // Set Method for html
+        $("#setHtml").click(function (){
+            $("#exampletext").html("<span>with set and get method</span>");
+        });
+
+         // Get Method for input
+         console.log($("#inputexample").val());
+
+        // Set Method for input
+         $("#seInput").click(function (){
+         $("#inputexample").val("world");
+       });
+
+         // Get Method for attribute
+         console.log($("#examplelink").attr("href"));
+
+       // Set Method for attribute
+        $("#seInput").click(function (){
+        $("#inputexample").attr("href","https://www.techtarget.com/whatis/definition/wiki");
+       });
+    </script>
+
+
+</body>
+</html>

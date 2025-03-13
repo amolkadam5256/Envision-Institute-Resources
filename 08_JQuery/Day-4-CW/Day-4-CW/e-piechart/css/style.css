@@ -1,0 +1,28 @@
+chart-wrapper {
+    display: flex;
+    width: 40%;
+    margin: 100px auto;
+  }
+  
+  .chart {
+    margin: 0 10px 0 auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+  
+  .wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+  }

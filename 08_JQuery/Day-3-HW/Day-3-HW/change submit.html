@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p>This is the Example Of Change And Submit in Jquery</p>
+    <label for="color">Choose a color</label>
+    <select id="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+
+    <p id="display">You Selected : none</p>
+    </hr>
+
+    <form id="myform">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"/><br/>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        $("#color").change(function() {
+            var selectedcolor = $(this).val();  
+            $("#display").text("You selected: " + selectedcolor);
+        });
+
+        $("#myform").submit(function (){
+            event.preventDefault();
+            var name = $("#name").val();
+            alert("From Submitted With Name: " + name);
+        });
+    </script>
+</body>
+</html>

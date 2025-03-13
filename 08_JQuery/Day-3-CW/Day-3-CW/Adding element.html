@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Element in jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <p>Adding Element in jQuery</p>
+  
+  <div id="container">
+    <p>same Text</p>
+  </div>
+  
+  <button id="append">Append Button</button>
+  <button id="prepend">Prepend Button</button>
+  <button id="before">Before Button</button>
+  <button id="after">After Button</button>
+
+  <script>
+    // Append
+    $("#append").click(function() {
+      $("#container").append("<p>Another Text</p>");
+    });
+
+    // Prepend
+    $("#prepend").click(function() {
+      $("#container").prepend("<p>Adding using prepend</p>");
+    });
+
+    // Before
+    $("#before").click(function() {
+      $("#container").before("<p>Adding using Before.</p>");
+    });
+
+    // After
+    $("#after").click(function() {
+      $("#container").after("<p>Adding using after.</p>");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        #divone {
+            background-color: red;
+            border: 1px solid;
+            margin-top: 3%;
+            padding: 2%;
+        }
+
+        #divtwo {
+            background-color: bisque;
+            border: 1px solid;
+            margin-top: 3%;
+            padding: 2%;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is an Example of Removing Elements from the DOM using jQuery</h1>
+
+    <div id="divone">
+        <p>Demo p</p>
+        <p>Demo p</p>
+    </div>
+
+    <div id="divtwo">
+        <p>Demo p</p>
+        <p>Demo p</p>
+    </div>
+
+    <button id="remove">Remove Button</button>
+    <button id="empty">Empty Button</button>
+
+    <script>
+        $("#remove").click(function () {
+            $("#divone").remove(); 
+        });
+
+        $("#empty").click(function () {
+            $("#divtwo").empty(); 
+        });
+    </script>
+</body>
+</html>

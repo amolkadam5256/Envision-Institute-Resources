@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Tree Traversal Example with jQuery</h1>
+
+    <section id="greatgrandparent">
+        <section id="grandparent">
+            <div id="Parent">
+                <p id="Childone">Child 1</p>
+                <p id="Childtwo">Child 2</p>
+                <p id="Childthree">Child 3</p>
+            </div>
+        </section>
+    </section>
+
+    <button id="FindParent">FIND PARENT</button>
+    <button id="FindGrandParent">FIND Grand PARENT</button>
+    <button id="FindParentsUntil">FIND PARENTS Until</button>
+    <button id="FindChildren">FIND CHILDREN</button>
+    <button id="SearchChildren">SEARCH CHILDREN</button>
+    <button id="FindSibling">FIND SIBLING</button>
+    <button id="NextSibling">NEXT SIBLING</button>
+    <button id="NextAllSibling">NEXT ALL SIBLING</button>
+    <button id="NextUntilSibling">NEXT UNTIL SIBLING</button>
+    <button id="PreviousSibling">PREVIOUS SIBLING</button>
+    <button id="PreviousAllSibling">PREVIOUS ALL SIBLING</button>
+    <button id="PreviousUntilSibling">PREVIOUS UNTIL SIBLING</button>
+
+
+
+    <script>
+        // Find Parent
+        $("#FindParent").click(function () {
+            console.log($("#Childone").parent()); 
+        });
+
+        // Find Grand Parent
+        $("#FindGrandParent").click(function () {
+            console.log($("#Childone").parents());  
+        });
+
+        // Find Parents Until
+        $("#FindParentsUntil").click(function () {
+            console.log($("#Childone").parentsUntil("#grandparent")); 
+        });
+
+        // Find Children
+        $("#FindChildren").click(function () {
+            console.log($("#Parent").children());  
+        });
+
+        // Search Children
+        $("#SearchChildren").click(function () {
+            console.log($("#Parent").find("#Childtwo"));  
+        });
+
+        // Find Sibling
+        $("#FindSibling").click(function () {
+            console.log($("#Childtwo").siblings());  
+        });
+
+        // Next Sibling
+        $("#NextSibling").click(function () {
+            console.log($("#Childtwo").next());  
+        });
+
+        // Next All Sibling
+        $("#NextAllSibling").click(function () {
+            console.log($("#Childone").nextAll());  
+        });
+
+        // Next Until Sibling
+        $("#NextUntilSibling").click(function () {
+            console.log($("#Childone").nextUntil());  
+        });
+
+        // Previous Sibling
+        $("#PreviousSibling").click(function () {
+            console.log($("#Childthree").prev());  
+        });
+
+        // Previous All Sibling
+        $("#PreviousAllSibling").click(function () {
+            console.log($("#Childthree").prevAll());  
+        });
+
+        // Previous Until Sibling
+        $("#PreviousUntilSibling").click(function () {
+            console.log($("#Childthree").prevUntil());  
+        });
+
+
+    </script>
+</body>
+</html>

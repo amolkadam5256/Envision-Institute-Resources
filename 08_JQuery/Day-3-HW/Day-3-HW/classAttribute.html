@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <style>
+        .highlight {
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Example of Class Attribute in jQuery</h1>
+    <p>This is Demo Text</p>
+    <button id="addclass">Add Class</button>
+    <button id="removeclass">Remove Class</button>
+    <button id="toggleclass">Toggle Class</button>
+    <button id="hasclass">Has Class</button>
+
+    <script>
+        // Add class
+        $("#addclass").click(function (){
+            $("P").addClass("highlight");
+        });
+
+        // Remove class
+        $("#removeclass").click(function (){
+            $("P").removeClass("highlight");
+        });
+
+        // Toggle class
+        $("#toggleclass").click(function (){
+            $("P").toggleClass("highlight");
+        });
+
+        // Has class
+        $("#hasclass").click(function (){
+            if($("P").hasClass("highlight")){
+                alert("Paragraph tag has 'highlight' class.");
+            } else {
+                alert("Paragraph does not have 'highlight' class.");
+            }
+        });
+    </script>
+</body>
+</html>
