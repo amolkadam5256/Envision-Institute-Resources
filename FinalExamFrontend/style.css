@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    align-items: center;
+}
+
+.navbar-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px
+}
+
+.navbar-buttons:hover {
+    background-color: blue;
+    border-radius: 20px;
+    color: white;
+    align-items: center;
+    padding: 10px 16px
+}
+
+.bg-light {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Images/03.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+
+
+.video-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.watch-video {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Adjust spacing between icon and text */
+}
+
+
+/* card  */
+
+.box-item {
+    background: #007bff;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.icon-block-top {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.box-list li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.mbr-section-btn a {
+    border: 2px solid white;
+    padding: 8px 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.mbr-section-btn a:hover {
+    background: white;
+    color: #007bff;
+}
+
+/* we are  */
+
+
+.signature {
+    display: block;
+    margin-top: 10px;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+
+/* services card */
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card i {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #1a202c;
+    font-weight: 600;
+}
+
+.service-card:hover {
+    background-color: #007bff;
+
+    i {
+        color: white;
+    }
+}
+
+
+.learn-more-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.learn-more-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* increment section */
+.stats-section {
+    background-color: #4285f4;
+    color: white;
+    padding: 3rem 0;
+}
+.stats-section .stat {
+    text-align: center;
+}
+.stats-section .stat-divider {
+    border-left: 1px solid white;
+    height: 4rem;
+}
+
+
+/* services contacy */
+.section-title {
+    color: #1e3a8a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.main-title {
+    color: #1f2937;
+}
+.description {
+    color: #6b7280;
+}
+.process-step {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.process-step img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.process-step-number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.process-step-title {
+    color: #1f2937;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.process-step-description {
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+.shadow-blue {
+    box-shadow: 5px 5px 6px rgba(0, 123, 255, 0.5); /* Blue shadow */
+}
+
+
+/* .carousel-item */
+
+.carousel-item {
+    height: 600px;
+    display: flex;
+  }
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 50%;
+  }
+  .testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .testimonial .quote {
+    width:50px;
+    justify-content: center;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+  }
+  .testimonial .stars i {
+    color: #ffc107;
+  }
+  .testimonial .profile img {
+    border-radius: 50%;
+  }
+
+
+  /* prising  */
+
+  .pricing-card {
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pricing-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-primary {
+    border-radius: 25px;
+}
+ 
+/* footer */
+
+
+.footer-section {
+    padding: 3rem 0;
+}
+.footer-section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.footer-section .border-bottom {
+    border-bottom: 2px solid #007bff;
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+.footer-section p, .footer-section a {
+    font-size: 0.875rem;
+}
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    text-decoration: underline;
+}
+.footer-section .text-blue {
+    color: #007bff;
+}
+.footer-section .icon {
+    color: #007bff;
+    margin-right: 0.5rem;
+}
+.footer-section .list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+.footer-section .list-unstyled li a {
+    color: white;
+}
+.footer-section .list-unstyled li a:hover {
+    text-decoration: underline;
+}
+.footer-section .list-unstyled li span {
+    color: #007bff;
+}
+.footer-section .list-unstyled li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+.footer-section .list-unstyled li .post-date {
+    color: #007bff;
+}
+.footer-section .copyright {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.875rem;
+}
